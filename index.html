@@ -19,58 +19,38 @@
       .btn-floating.m-1 {
         padding-top: 9px;
       }
+
+      .lead {
+        text-align: justify;
+      }
     </style>
 
   </head>
-  <body class="d-flex flex-column h-100">
+  
+  <body class="d-flex flex-column h-100" oncontextmenu="return false">
 
     <!-- Navbar -->
     <nav class="navbar bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <img src="https://i.ibb.co/ZSQG7D9/fotobadge.jpg" alt="Bootstrap" width="25" height="35" class="rounded-circle">
         <a class="navbar-brand" href="#">Francesco Grande "Portfolio"</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+          <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
         </div>
       </div>
+      
     </nav>
 
     <!-- Main Content -->
     <br><br>
+    <br><br>
+    
     <main class="flex-shrink-0">
       <div class="container">
-        <h1 class="mt-5">Main Content Here</h1>
+        <h3 class="mt-5">Main Content Here</h3>
         <p class="lead">This is the main section of your page. This is the main section of your page. This is the main section of your page. This is the main section of your page. This is the main section of your page. This is the main section of your page. This is the main section of your page. This is the main section of your page. This is the main section of your page. This is the main section of your page. This is the main section of your page. This is the main section of your page. This is the main section of your page. This is the main section of your page. This is the main section of your page.</p>
       </div>
     </main>
@@ -80,13 +60,13 @@
       <div class="container-fluid">
         <section class="mb-4">
           <!-- Facebook -->
-          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/francesco.chicco.81" role="button"><i class="fab fa-facebook-f"></i></a>
           <!-- Instagram -->
           <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
           <!-- Linkedin -->
-          <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/in/francescogrande1981/" role="button"><i class="fab fa-linkedin-in"></i></a>
           <!-- Github -->
-          <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
+          <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/francisgrain" role="button"><i class="fab fa-github"></i></a>
         </section>
       </div>
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
@@ -103,5 +83,6 @@
 
     <!-- MDBootstrap JS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+
   </body>
 </html>
