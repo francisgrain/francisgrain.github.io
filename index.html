@@ -24,8 +24,30 @@
         user-select: none; /* Standard syntax */
       }
 
-      .btn-floating.m-1 {
-        padding-top: 9px;
+      .navbar-nav .nav-link {
+        color: black; /* Colore del testo della navbar */
+        font-family: 'Poiret One', cursive;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .navbar-nav .nav-link:hover,
+      .navbar-nav .nav-link:focus {
+        color: grey; /* Colore quando il link è in hover o in focus */
+      }
+
+      /* Social Icons Alignment */
+      .btn-floating {
+        display: inline-flex; /* Cambia display a inline-flex */
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra orizzontalmente */
+        width: 35px; /* Dimensione fissa del pulsante */
+        height: 35px; /* Dimensione fissa del pulsante */
+        padding: 0; /* Rimuove padding extra */
+        font-size: 15px; /* Puoi regolare la dimensione del simbolo */
+        border-radius: 50%; /* Mantiene il bottone rotondo */
+        transition: background-color 0.3s ease; /* Transizione per l'hover */
       }
 
       .lead {
@@ -35,18 +57,16 @@
       .navbar-brand {
         font-family: 'Poiret One', cursive;
         padding-right: 270px;
+        font-weight: bold;
       }
 
       .lead, h3 {
         font-family: 'Poiret One', cursive;
-        font-size: 1.3rem; /* Dimensione leggermente aumentata */
-
+        font-size: 1.3rem;
       }
 
-      .navbar-nav .nav-link {
-        font-family: 'Poiret One', cursive;
-        font-size: 1.3rem; /* Dimensione leggermente aumentata */
-
+      h3 {
+        font-weight: bold;
       }
 
       @media (max-width: 992px) {
@@ -72,10 +92,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-            <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+            <a class="nav-link active" id="nav-home-tab" href="#home" role="tab">Home</a>
+            <a class="nav-link" id="nav-skills-tab" href="#skills" role="tab">Skills</a>
+            <a class="nav-link" id="nav-contact-tab" href="#contact" role="tab">Contact</a>
+            <a class="nav-link" id="nav-disabled-tab" href="#disabled" role="tab" aria-disabled="true">Disabled</a>
           </div>
         </div>
       </div>
@@ -87,8 +107,14 @@
     <div id="prevent-select">    
       <main class="flex-shrink-0">
         <div class="container">
-          <h3 class="mt-5">About me</h3>
-          <p class="lead">I'm a junior full-stack developer from Italy. I'm a very creative person, I compose and release electronic music by my own.</p>
+          <h3 class="mt-5" id="home">About me</h3>
+          <p class="lead">I'm a junior full-stack developer from Italy, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nihil minus, necessitatibus ipsa illo repellat dolorem earum optio adipisci doloribus error quidem cumque architecto accusantium eum, sapiente aspernatur deserunt facere! Deleniti maiores sapiente vitae sed. Modi fugiat sit eos unde cupiditate, dolorem exercitationem numquam ea repellat explicabo temporibus ipsa officia, ducimus laboriosam ex porro repudiandae ratione et? Cupiditate nobis vitae, ducimus, explicabo blanditiis aliquid molestias est quam ab dolorem laudantium alias placeat eos totam, possimus facere odit et ad hic at laborum corporis ut. Voluptate itaque quo ipsum provident iusto nihil consectetur aperiam rerum eaque optio non in illum quasi, ea maiores beatae, quia architecto, totam deleniti. Repellat sapiente culpa iusto quod eligendi, incidunt ullam ducimus repellendus obcaecati unde quasi magni commodi accusantium, reprehenderit consequatur pariatur dolorum, eveniet error iste voluptates? Quae, aliquam. Dicta sit distinctio quaerat soluta rerum, ullam aspernatur odit architecto! Maiores libero nihil officia. Debitis doloremque rem adipisci quasi aperiam voluptatem! Quia natus ad blanditiis magni facilis fuga aut voluptatum cum nam architecto temporibus accusantium reprehenderit a ea quis recusandae dicta laboriosam ipsum ratione facere, neque laborum. Possimus qui, voluptate corporis in, veritatis recusandae quae ipsum obcaecati temporibus modi quidem quo rem error expedita eveniet eum minima explicabo assumenda neque optio natus doloremque odit aperiam pariatur! Possimus consectetur aliquid necessitatibus, distinctio laudantium tenetur, fugit modi nam ratione nemo obcaecati vel et eaque error quam doloribus iure odio exercitationem? Reprehenderit quae aspernatur, ut distinctio et nulla nisi obcaecati deserunt placeat sint harum maiores qui molestiae eum non consequatur iusto ex laudantium omnis fugiat? Ea vero atque error soluta labore, dignissimos neque, tempora voluptatum tempore quas voluptate ab earum eos, fuga aperiam dicta sint quis temporibus aut nemo placeat aspernatur. Qui vero magnam aspernatur voluptatum veritatis molestias a aliquid minus facilis pariatur perspiciatis enim asperiores inventore nihil expedita at sint adipisci labore fugit, necessitatibus et veniam, doloribus recusandae maiores. Dolorem praesentium obcaecati ducimus corrupti laboriosam. Nulla velit amet blanditiis est voluptate architecto error itaque voluptatibus libero provident dolore ipsum, fugiat, nisi, nam nihil fugit quae praesentium? Quas error iusto fugit ab nesciunt optio beatae debitis consectetur eaque dignissimos vero aperiam, in possimus. Officia repudiandae veniam reiciendis dolores maxime, adipisci minima sed, magnam, ipsam voluptates harum delectus maiores sequi. Aliquam harum eligendi enim consequatur! Perspiciatis aperiam accusamus optio vel error dignissimos dolorum laboriosam corrupti dolore debitis? Iure ipsa officia corrupti inventore ducimus alias qui sint adipisci ratione, cupiditate tempora iusto incidunt pariatur ipsam. Laudantium repellendus dolor numquam qui? Libero ex ut recusandae, iure praesentium corporis nostrum sint pariatur! Non, nisi? Iure ipsum nihil autem, aspernatur repellendus delectus alias nisi commodi voluptates possimus, debitis esse non molestias veritatis, unde accusamus reiciendis exercitationem iusto minus itaque voluptas voluptatem. Numquam obcaecati reiciendis distinctio maxime dolorum ipsa, atque, illo consequuntur porro perspiciatis ut vero cum repellendus libero ratione cumque ullam beatae neque, amet quam? Nulla sed aliquid doloremque rerum nam incidunt dolores, temporibus ut consequatur, sit laborum non! Aliquam, quae? Rem perferendis fuga dolorem deleniti maxime ut dicta nesciunt? Distinctio culpa unde corporis animi?</p>
+          <h3 class="mt-5" id="skills">Skills</h3>
+          <p class="lead">My skills are...</p>
+          <h3 class="mt-5" id="contact">Contact</h3>
+          <p class="lead">Contact information...</p>
+          <h3 class="mt-5" id="disabled">Disabled</h3>
+          <p class="lead">This section is disabled...</p>
         </div>
       </main>
     </div>
