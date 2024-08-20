@@ -18,6 +18,8 @@
             -ms-user-select: none; /* IE 10 and IE 11 */
             user-select: none; /* Standard syntax */
         }
+
+
         .navbar-nav .nav-link {
             color: black; /* Colore del testo della navbar */
             font-family: 'Poiret One', cursive;
@@ -25,10 +27,14 @@
             font-size: 1.1rem;
             text-decoration: none;
         }
+
+
         .navbar-nav .nav-link:hover,
         .navbar-nav .nav-link:focus {
             color: #f1e3dd; /* Colore quando il link è in hover o in focus */
         }
+
+
         .btn-floating {
             display: inline-flex; /* Cambia display a inline-flex */
             align-items: center; /* Centra verticalmente */
@@ -41,33 +47,53 @@
             transition: background-color 0.3s ease; /* Transizione per l'hover */
         }
 
+
         .header-title {
           font-weight:bold;
         }
 
-        .lead {
-            text-align: justify;
-        }
+
         .navbar-brand {
             font-family: 'Poiret One', cursive;
             font-family: 'Duru Sans', sans-serif;
             padding-right: 270px;
         }
+
+        
+        .lead {
+          padding-right: 30px;
+          padding-bottom: 30px;
+          padding-left: 30px;
+            text-align: justify;
+        }
+
+
+        h3 {
+          padding-left:10px;
+        }
+
+
         .lead, h3 {
             font-family: 'Poiret One', cursive;
             font-family: 'Duru Sans', sans-serif;
             font-size: 1.3rem;
         }
+
+
         h3 {
             font-weight: bold;
         }
+
+
         .section-divider {
             position: relative;
-            height: 3px;
+            height: 1px;
             background-color: #f0f0f0;
             overflow: hidden;
             margin: 20px 0;
         }
+
+
         .section-divider::before, .section-divider::after {
             content: '';
             position: absolute;
@@ -81,6 +107,8 @@
             transform: skew(-20deg, 50deg);
             animation: glitch 50.5s infinite;
         }
+
+
         .section-divider::after {
             animation-delay: 0.75s;
         }
@@ -105,6 +133,7 @@
         }
       }
 
+
       .glitch-text {
     position: relative;
     font-family: 'Poiret One', cursive, 'Duru Sans', sans-serif;
@@ -113,6 +142,7 @@
     animation: subtle-glitch 3s infinite;
     animation-delay: 5s; /* Ritardo di 5 secondi */
 }
+
 
 .glitch-text::before, .glitch-text::after {
     content: 'Francesco Grande # Portfolio';
@@ -124,17 +154,20 @@
     clip: rect(0, 900px, 0, 0); /* Clip iniziale */
 }
 
+
 .glitch-text::before {
     animation: subtle-glitch-before 3s infinite linear alternate;
     animation-delay: 5.5s; /* Ritardo di 5.5 secondi */
     color: rgba(0, 255, 255, 0.6); /* Colore glitch ciano */
 }
 
+
 .glitch-text::after {
     animation: subtle-glitch-after 3s infinite linear alternate;
     animation-delay: 4s; /* Ritardo di 4 secondi */
     color: #c83349; /* Colore glitch limegreen */
 }
+
 
 @keyframes subtle-glitch {
     0%, 100% {
@@ -147,6 +180,7 @@
         transform: translate(-1px, -1px); /* Movimento molto piccolo */
     }
 }
+
 
 @keyframes subtle-glitch-before {
     0%, 100% {
@@ -163,6 +197,7 @@
     }
 }
 
+
 @keyframes subtle-glitch-after {
     0%, 100% {
         clip: rect(0, 900px, 0, 0);
@@ -177,10 +212,10 @@
         transform: translate(-1px, 1px); /* Movimento molto piccolo */
     }
 }
-
-
     </style>
 </head>
+
+
 <body class="d-flex flex-column h-100" oncontextmenu="return false">
 
     <!-- Navbar -->
@@ -212,15 +247,26 @@
     <div id="prevent-select">    
         <main class="flex-shrink-0">
             <div class="container">
+              <div class="container-fluid p-0">
+                <div class="card mx-auto" style="max-width: 100%;">
+
                 <h3 class="mt-5" id="aboutMe">About me</h3>
+                <div class="section-divider"></div>
+
                 <p class="lead">I'm a junior full-stack developer from Italy. I'm a very creative guy, I love everything from the tech-world, since my childhood I've always loved computers and electronics. I also compose, release, and distribute electronic music on my own. I work mostly with HTML, CSS3, JavaScript, Bootstrap, TypeScript, Angular, OOP, Java, SpringBoot, Thymeleaf. You can find my code on my GitHub page below.              
                 </p>
-                <div class="section-divider"></div>
+                </div>
+              </div>
+
+              <br>
+              
+              <div class="container-fluid p-0">
+                <div class="card mx-auto" style="max-width: 100%;">
                 <h3 class="mt-5" id="portfolio">Portfolio</h3>
-                <p class="lead">Here is my portfolio...</p>
+                <div class="section-divider"></div>
 
                 <div class="container-fluid p-0">
-                  <div class="card mx-auto" style="max-width: 50%;">
+                  <div class="card mx-auto" style="max-width: 50%;"><!--MODIFICA MAX WIDTH AL 100% PER AUMENTARE VISUALIZZAZIONE WEB PC-->
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -266,53 +312,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="container-fluid p-0">
-                  <div class="card mx-auto" style="max-width: 50%;">
-                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="/assets/images/myfirstpc1.png" class="d-block w-100 img-fluid" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="/assets/images/myfirstpc2.png" class="d-block w-100 img-fluid" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="/assets/images/myfirstpc3.png" class="d-block w-100 img-fluid" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="/assets/images/myfirstpc4.png" class="d-block w-100 img-fluid" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="/assets/images/myfirstpc5.png" class="d-block w-100 img-fluid" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="/assets/images/myfirstpc6.png" class="d-block w-100 img-fluid" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="/assets/images/myfirstpc7.png" class="d-block w-100 img-fluid" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="/assets/images/myfirstpc8.png" class="d-block w-100 img-fluid" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="/assets/images/myfirstpc9.png" class="d-block w-100 img-fluid" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="/assets/images/myfirstpc10.png" class="d-block w-100 img-fluid" alt="...">
-                        </div>
-                        <!-- Aggiungi le altre immagini qui -->
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-                    </div>
-                  </div>
                 </div>
+              </div>
                 
                 <div class="section-divider"></div>
                 <h3 class="mt-5" id="skills">Skills</h3>
