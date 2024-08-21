@@ -57,6 +57,18 @@
         font-size: 1.3rem;
       }      
 
+      .button-container {
+        text-align: center; /* Centra il pulsante */
+        margin-top: -10px; /* Riduce lo spazio sopra il pulsante */
+        margin-bottom: 35px;
+      }
+      
+      .button-container .btn {
+        display: inline-block;
+        margin-top: 0; /* Elimina il margine superiore predefinito */
+        padding: 10px 20px; /* Imposta una dimensione adeguata del pulsante */
+      }
+      
       .section-divider {
         position: relative;
         height: 1px;
