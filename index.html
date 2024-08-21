@@ -85,7 +85,17 @@
       }
 
       .skills-container {
-        max-width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* In caso di overflow, le icone andranno su una nuova riga */
+        gap: 15px; /* Spazio tra le icone */
+        padding: 10px;
+      }
+
+      .skill-icon {
+        width: 50px; /* Dimensione delle icone */
+        height: auto; /* Mantiene le proporzioni */
       }
 
       .section-divider {
@@ -212,13 +222,11 @@
         }
       }
 
-
       .p-3 {
-        background-color: #f2f2f2; 
+        background-color: #f2f2f2;
         border-radius: 8px;
         text-align: center;
       }
-
 
       .description-one {
         text-align: justify;
@@ -309,7 +317,10 @@
               <div class="section-divider"></div>
               <!-- Row for two carousels side by side -->
               <div class="row">
-                <div class="col-md-6 mb-4" style="padding-left: 20px; padding-right: 20px;">
+                <div
+                  class="col-md-6 mb-4"
+                  style="padding-left: 20px; padding-right: 20px"
+                >
                   <!-- col-md-6 means each carousel will take 50% width on medium and larger screens -->
 
                   <div
@@ -417,19 +428,26 @@
                     <div class="container-fluid p-3">
                       <h5>App - My First Pc:</h5>
                       <p class="description-one">
-                        Full management application, server and client side, to insert
-                        different types of items into your warehouse's database with all the
-                        related details such as price, quantity, description and
-                        images. The same items are then available in the user
-                        store where anyone can purchase them according to modern
-                        e-commerce processes.
+                        Full management application, server and client side, to
+                        insert different types of items into your warehouse's
+                        database with all the related details such as price,
+                        quantity, description and images. The same items are
+                        then available in the user store where anyone can
+                        purchase them according to modern e-commerce processes.
                       </p>
-                      <a href="https://github.com/francisgrain/App-My-firts-Pc" class="btn btn-light" target="_blank">View Code</a>
-
+                      <a
+                        href="https://github.com/francisgrain/App-My-firts-Pc"
+                        class="btn btn-light"
+                        target="_blank"
+                        >View Code</a
+                      >
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 mb-4" style="padding-left: 20px; padding-right: 20px;">
+                <div
+                  class="col-md-6 mb-4"
+                  style="padding-left: 20px; padding-right: 20px"
+                >
                   <!-- col-md-6 means each carousel will take 50% width on medium and larger screens -->
 
                   <div
@@ -537,45 +555,92 @@
                     <div class="container-fluid p-3">
                       <h5>App - My First Pc:</h5>
                       <p class="description-one">
-                        Full management application, server and client side, to insert
-                        different types of items into your database with all the
-                        related details such as price, quantity, description and
-                        images. The same items are then available in the user
-                        store where anyone can purchase them according to modern
-                        e-commerce processes.
+                        Full management application, server and client side, to
+                        insert different types of items into your database with
+                        all the related details such as price, quantity,
+                        description and images. The same items are then
+                        available in the user store where anyone can purchase
+                        them according to modern e-commerce processes.
                       </p>
-                      <a href="https://github.com/francisgrain/App-My-firts-Pc" class="btn btn-light" target="_blank">View Code</a>
-
+                      <a
+                        href="https://github.com/francisgrain/App-My-firts-Pc"
+                        class="btn btn-light"
+                        target="_blank"
+                        >View Code</a
+                      >
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <br>
+          <br />
           <div class="container-fluid p-0">
-            <div class="card mx-auto" style="max-width: 100%;">
+            <div class="card mx-auto" style="max-width: 100%">
               <h3 class="mt-5" id="skills">Skills</h3>
               <div class="section-divider"></div>
               <p class="lead">My tech skills</p>
-          
-              <!-- Contenitore per le icone con classi d-flex e justify-content-center -->
+
+              <!-- Contenitore per le icone -->
               <div class="skills-container">
-                <img src="assets/icons/eclipse.svg" alt="eclipse-icon" class="skill-icon">
-                <img src="assets/icons/boostrap.svg" alt="bootstrap-icon" class="skill-icon">
-                <img src="assets/icons/angular.svg" alt="angular-icon" class="skill-icon">
-                <img src="assets/icons/css.svg" alt="css-icon" class="skill-icon">
-                <img src="assets/icons/github.svg" alt="github-icon" class="skill-icon">
-                <img src="assets/icons/java.svg" alt="java-icon" class="skill-icon">
-                <img src="assets/icons/javascript.svg" alt="javascript-icon" class="skill-icon">
-                <img src="assets/icons/mysql.svg" alt="mysql-icon" class="skill-icon">
-                <img src="assets/icons/spring.svg" alt="springboot-icon" class="skill-icon">
-                <img src="assets/icons/typescript.svg" alt="typescript-icon" class="skill-icon">
-                <img src="assets/icons/vscode.svg" alt="vscode-icon" class="skill-icon">
+                <img
+                  src="assets/icons/eclipse.svg"
+                  alt="eclipse-icon"
+                  class="skill-icon"
+                />
+                <img
+                  src="assets/icons/boostrap.svg"
+                  alt="bootstrap-icon"
+                  class="skill-icon"
+                />
+                <img
+                  src="assets/icons/angular.svg"
+                  alt="angular-icon"
+                  class="skill-icon"
+                />
+                <img
+                  src="assets/icons/css.svg"
+                  alt="css-icon"
+                  class="skill-icon"
+                />
+                <img
+                  src="assets/icons/github.svg"
+                  alt="github-icon"
+                  class="skill-icon"
+                />
+                <img
+                  src="assets/icons/java.svg"
+                  alt="java-icon"
+                  class="skill-icon"
+                />
+                <img
+                  src="assets/icons/javascript.svg"
+                  alt="javascript-icon"
+                  class="skill-icon"
+                />
+                <img
+                  src="assets/icons/mysql.svg"
+                  alt="mysql-icon"
+                  class="skill-icon"
+                />
+                <img
+                  src="assets/icons/spring.svg"
+                  alt="springboot-icon"
+                  class="skill-icon"
+                />
+                <img
+                  src="assets/icons/typescript.svg"
+                  alt="typescript-icon"
+                  class="skill-icon"
+                />
+                <img
+                  src="assets/icons/vscode.svg"
+                  alt="vscode-icon"
+                  class="skill-icon"
+                />
               </div>
             </div>
           </div>
-          
         </div>
       </main>
     </div>
