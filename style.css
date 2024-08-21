@@ -1,0 +1,211 @@
+      @import url("https://fonts.googleapis.com/css2?family=Duru+Sans&family=Poiret+One&display=swap");
+      #prevent-select {
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+      }
+
+      body {
+        background-color: #eef7ff;
+      }
+
+      .navbar-nav .nav-link {
+        color: black; /* Colore del testo della navbar */
+        font-family: "Duru Sans", sans-serif;
+        font-size: 1.1rem;
+        text-decoration: none;
+      }
+
+      .navbar-nav .nav-link:hover,
+      .navbar-nav .nav-link:focus {
+        color: #f1e3dd; /* Colore quando il link è in hover o in focus */
+      }
+
+      .btn-floating {
+        display: inline-flex; /* Cambia display a inline-flex */
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra orizzontalmente */
+        width: 35px; /* Dimensione fissa del pulsante */
+        height: 35px; /* Dimensione fissa del pulsante */
+        padding: 0; /* Rimuove padding extra */
+        font-size: 15px; /* Puoi regolare la dimensione del simbolo */
+        border-radius: 50%; /* Mantiene il bottone rotondo */
+        transition: background-color 0.3s ease; /* Transizione per l'hover */
+      }
+
+      .navbar-brand {
+        font-family: "Duru Sans", sans-serif;
+        padding-right: 270px;
+      }
+
+      .lead {
+        padding-right: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        text-align: justify;
+      }
+
+      h3 {
+        padding-left: 10px;
+        padding-bottom: 20px;
+      }
+
+      .lead,
+      h3 {
+        font-family: "Duru Sans", sans-serif;
+        font-size: 1.3rem;
+      }
+
+      h3 {
+        padding-left: 30px;
+        font-weight: bold;
+      }
+
+      .skills-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* In caso di overflow, le icone andranno su una nuova riga */
+        gap: 15px; /* Spazio tra le icone */
+        padding: 10px;
+      }
+
+      .skill-icon {
+        width: 100px; /* Dimensione delle icone */
+        height: auto; /* Mantiene le proporzioni */
+      }
+
+      .section-divider {
+        position: relative;
+        height: 1px;
+        background-color: #f0f0f0;
+        overflow: hidden;
+        margin: 20px 0;
+      }
+
+      .section-divider::before,
+      .section-divider::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        opacity: 0.2;
+        z-index: 1;
+        transform: skew(-20deg, 50deg);
+        animation: glitch 50.5s infinite;
+      }
+
+      .section-divider::after {
+        animation-delay: 0.75s;
+      }
+      @keyframes glitch {
+        0% {
+          transform: translate(0);
+        }
+        20% {
+          transform: translate(10px, -3px);
+        }
+        40% {
+          transform: translate(-8px, 4px);
+        }
+        60% {
+          transform: translate(5px, 10px);
+        }
+        80% {
+          transform: translate(-10px, -5px);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
+
+      .glitch-text {
+        position: relative;
+        font-family: "Duru Sans", sans-serif;
+        font-size: 1.3rem;
+        color: black;
+        animation: subtle-glitch 3s infinite;
+        animation-delay: 5s; /* Ritardo di 5 secondi */
+      }
+
+      .glitch-text::before,
+      .glitch-text::after {
+        content: "Francesco Grande # Portfolio";
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.7;
+        color: rgba(255, 0, 0, 0.6); /* Colore glitch leggermente visibile */
+        clip: rect(0, 900px, 0, 0); /* Clip iniziale */
+      }
+
+      .glitch-text::before {
+        animation: subtle-glitch-before 3s infinite linear alternate;
+        animation-delay: 5.5s; /* Ritardo di 5.5 secondi */
+        color: rgba(0, 255, 255, 0.6); /* Colore glitch ciano */
+      }
+
+      .glitch-text::after {
+        animation: subtle-glitch-after 3s infinite linear alternate;
+        animation-delay: 4s; /* Ritardo di 4 secondi */
+        color: #c83349; /* Colore glitch limegreen */
+      }
+
+      @keyframes subtle-glitch {
+        0%,
+        100% {
+          transform: translate(0);
+        }
+        30% {
+          transform: translate(1px, 1px); /* Movimento molto piccolo */
+        }
+        60% {
+          transform: translate(-1px, -1px); /* Movimento molto piccolo */
+        }
+      }
+
+      @keyframes subtle-glitch-before {
+        0%,
+        100% {
+          clip: rect(0, 900px, 0, 0);
+          transform: translate(0);
+        }
+        30% {
+          clip: rect(10px, 900px, 40px, 0); /* Leggero smottamento del glitch */
+          transform: translate(-1px, -1px); /* Movimento minimo */
+        }
+        60% {
+          clip: rect(20px, 900px, 60px, 0); /* Leggero smottamento del glitch */
+          transform: translate(1px, 1px); /* Movimento minimo */
+        }
+      }
+
+      @keyframes subtle-glitch-after {
+        0%,
+        100% {
+          clip: rect(0, 900px, 0, 0);
+          transform: translate(0);
+        }
+        30% {
+          clip: rect(15px, 900px, 50px, 0); /* Piccolo spostamento */
+          transform: translate(1px, -1px); /* Movimento molto piccolo */
+        }
+        60% {
+          clip: rect(25px, 900px, 70px, 0); /* Piccolo spostamento */
+          transform: translate(-1px, 1px); /* Movimento molto piccolo */
+        }
+      }
+
+      .p-3 {
+        background-color: #f2f2f2;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .description-one {
+        font-family: "Duru Sans", sans-serif;
+        text-align: justify;
+      }
