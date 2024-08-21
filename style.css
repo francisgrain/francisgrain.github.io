@@ -8,6 +8,11 @@
       body {
         background-color: #eef7ff;
       }
+      
+      .navbar-brand {
+        font-family: "Duru Sans", sans-serif;
+        padding-right: 270px;
+      }
 
       .navbar-nav .nav-link {
         color: black; /* Colore del testo della navbar */
@@ -33,9 +38,10 @@
         transition: background-color 0.3s ease; /* Transizione per l'hover */
       }
 
-      .navbar-brand {
-        font-family: "Duru Sans", sans-serif;
-        padding-right: 270px;
+      h3 {
+        padding-bottom: 20px;
+        padding-left: 30px;
+        font-weight: bold;
       }
 
       .lead {
@@ -43,37 +49,13 @@
         padding-bottom: 30px;
         padding-left: 30px;
         text-align: justify;
-      }
-
-      h3 {
-        padding-left: 10px;
-        padding-bottom: 20px;
-      }
+      }      
 
       .lead,
       h3 {
         font-family: "Duru Sans", sans-serif;
         font-size: 1.3rem;
-      }
-
-      h3 {
-        padding-left: 30px;
-        font-weight: bold;
-      }
-
-      .skills-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap; /* In caso di overflow, le icone andranno su una nuova riga */
-        gap: 15px; /* Spazio tra le icone */
-        padding: 10px;
-      }
-
-      .skill-icon {
-        width: 100px; /* Dimensione delle icone */
-        height: auto; /* Mantiene le proporzioni */
-      }
+      }      
 
       .section-divider {
         position: relative;
@@ -208,4 +190,18 @@
       .description-one {
         font-family: "Duru Sans", sans-serif;
         text-align: justify;
+      }
+
+      .skills-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* In caso di overflow, le icone andranno su una nuova riga */
+        gap: 15px; /* Spazio tra le icone */
+        padding: 10px;
+      }
+
+      .skill-icon {
+        width: 100px; /* Dimensione delle icone */
+        height: auto; /* Mantiene le proporzioni */
       }
