@@ -84,6 +84,11 @@
         font-weight: bold;
       }
 
+      .flex-wrap {
+        gap: 15px; 
+        padding: 10px;"
+      }
+
       .section-divider {
         position: relative;
         height: 1px;
@@ -550,23 +555,28 @@
           </div>
           <br>
           <div class="container-fluid p-0">
-            <div class="card mx-auto" style="max-width: 100%">
+            <div class="card mx-auto" style="max-width: 100%;">
               <h3 class="mt-5" id="skills">Skills</h3>
-            <div class="section-divider"></div>
+              <div class="section-divider"></div>
               <p class="lead">My tech skills</p>
-              <img src="assets/icons/eclipse.svg" alt="eclipse-icon">
-              <img src="assets/icons/boostrap.svg" alt="bootstrap-icon">
-              <img src="assets/icons/angular.svg" alt="angular-icon">
-            <img src="assets/icons/css.svg" alt="css-icon">
-            <img src="assets/icons/github.svg" alt="github-icon">
-            <img src="assets/icons/java.svg" alt="java-icon">
-            <img src="assets/icons/javascript.svg" alt="javascript-icon">
-            <img src="assets/icons/mysql.svg" alt="mysql-icon">
-            <img src="assets/icons/spring.svg" alt="springboot-icon">
-            <img src="assets/icons/typescript.svg" alt="typescript-icon">
-            <img src="assets/icons/vscode.svg" alt="vscode-icon">
+          
+              <!-- Contenitore per le icone con classi d-flex e justify-content-center -->
+              <div class="d-flex justify-content-center flex-wrap">
+                <img src="assets/icons/eclipse.svg" alt="eclipse-icon" class="skill-icon">
+                <img src="assets/icons/boostrap.svg" alt="bootstrap-icon" class="skill-icon">
+                <img src="assets/icons/angular.svg" alt="angular-icon" class="skill-icon">
+                <img src="assets/icons/css.svg" alt="css-icon" class="skill-icon">
+                <img src="assets/icons/github.svg" alt="github-icon" class="skill-icon">
+                <img src="assets/icons/java.svg" alt="java-icon" class="skill-icon">
+                <img src="assets/icons/javascript.svg" alt="javascript-icon" class="skill-icon">
+                <img src="assets/icons/mysql.svg" alt="mysql-icon" class="skill-icon">
+                <img src="assets/icons/spring.svg" alt="springboot-icon" class="skill-icon">
+                <img src="assets/icons/typescript.svg" alt="typescript-icon" class="skill-icon">
+                <img src="assets/icons/vscode.svg" alt="vscode-icon" class="skill-icon">
+              </div>
             </div>
-         </div>
+          </div>
+          
         </div>
       </main>
     </div>
