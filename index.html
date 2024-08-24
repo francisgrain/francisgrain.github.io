@@ -75,10 +75,11 @@
               Contact
             </a>
             <!-- Aggiungi questo bottone nella navbar -->
-            <button id="theme-toggler" aria-label="Toggle Dark Mode">
-              <i class="fa-solid fa-sun-bright"></i> <!-- Icona per la modalità light -->
-              <i class="fa-solid fa-moon"></i> <!-- Icona per la modalità scura -->
-          </button>
+            <button id="theme-toggler">
+              <i class="fa-solid fa-sun-bright"></i>
+              <i class="fa-solid fa-moon" style="display: none;"></i>
+            </button>
+            
           
 
           </div>
@@ -513,8 +514,8 @@
     }
 
     // Cambia le icone del pulsante
-    const sunIcon = document.querySelector('#theme-toggle .fa-sun-bright');
-    const moonIcon = document.querySelector('#theme-toggle .fa-moon');
+    const sunIcon = document.querySelector('#theme-toggler .fa-sun-bright');
+    const moonIcon = document.querySelector('#theme-toggler .fa-moon');
     
     if (sunIcon && moonIcon) {
       if (currentTheme) {
