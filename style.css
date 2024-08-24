@@ -270,3 +270,23 @@ body.dark-mode .card {
   color: #ddd; /* Cambia colore del testo all'interno della card */
   box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Cambia l'ombra per adattarsi alla modalità scura */
 }
+
+/* Icona per la modalità scura */
+#theme-toggler .fa-sun-bright {
+  display: none;
+}
+
+/* Icona per la modalità chiara */
+body.dark-mode #theme-toggler .fa-sun-bright {
+  display: inline;
+}
+
+/* Icona per la modalità scura */
+#theme-toggler .fa-moon {
+  display: none;
+}
+
+/* Icona per la modalità scura */
+body.dark-mode #theme-toggler .fa-moon {
+  display: inline;
+}
