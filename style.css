@@ -198,25 +198,7 @@
         border-radius: 8px;
         text-align: center;
       }
-
-      .carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: auto; /* Per rimuovere eventuali dimensioni automatiche in larghezza */
-  height: auto; /* Per garantire che non occupino troppo spazio */
-}
-
-.carousel-control-prev {
-  left: 0;
-}
-
-.carousel-control-next {
-  right: 0;
-}
-
-
+      
       .description-one {
         font-family: "Duru Sans", sans-serif;
         text-align: justify;
