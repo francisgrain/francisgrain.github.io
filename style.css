@@ -255,6 +255,10 @@ body.dark-mode .section-divider {
   background-color: #EEEEEE;
 }
 
+body.dark-mode .card {
+  background-color: #444; /* Cambia colore di sfondo per elementi con classe .p-3 */
+}
+
 body.dark-mode .p-3 .card {
   background-color: #444; /* Cambia colore di sfondo per elementi con classe .p-3 */
 }
