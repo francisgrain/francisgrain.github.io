@@ -258,3 +258,9 @@ body.dark-mode .section-divider {
 body.dark-mode .p-3 {
   background-color: #444; /* Cambia colore di sfondo per elementi con classe .p-3 */
 }
+
+body.dark-mode .card {
+  background-color: #444; /* Cambia colore di sfondo per tutte le card in modalità scura */
+  color: #ddd; /* Cambia colore del testo all'interno della card */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Cambia l'ombra per adattarsi alla modalità scura */
+}
