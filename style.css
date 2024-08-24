@@ -255,6 +255,6 @@ body.dark-mode .section-divider {
   background-color: #555;
 }
 
-body.dark-mode .description-one {
-  background-color: #000000; /* Cambia colore di sfondo per elementi con classe .p-3 */
+body.dark-mode .p-3 {
+  background-color: #444; /* Cambia colore di sfondo per elementi con classe .p-3 */
 }
