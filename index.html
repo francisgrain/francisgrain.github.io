@@ -75,9 +75,11 @@
               Contact
             </a>
             <!-- Aggiungi questo bottone nella navbar -->
-<button id="theme-toggle" class="btn btn-outline-dark ms-2">
-<i class="fas fa-moon"></i> <!-- Icona per modalità scura -->
-</button>
+            <button id="theme-toggler" aria-label="Toggle Dark Mode">
+              <i class="fa-solid fa-sun-bright"></i> <!-- Icona per la modalità light -->
+              <i class="fa-solid fa-moon"></i> <!-- Icona per la modalità scura -->
+          </button>
+          
 
           </div>
         </div>
@@ -497,32 +499,63 @@
     <script>
     // Funzione per il toggle tra modalità chiara e scura
     function toggleTheme() {
-      const body = document.body;
-      const currentTheme = body.classList.contains('dark-mode');
-      console.log('Current Theme:', currentTheme);  // Debug
+    const body = document.body;
+    const currentTheme = body.classList.contains('dark-mode');
+    console.log('Current Theme:', currentTheme);  // Debug
 
+    // Cambia il tema
+    if (currentTheme) {
+      body.classList.remove('dark-mode');
+      localStorage.setItem('theme', 'light');
+    } else {
+      body.classList.add('dark-mode');
+      localStorage.setItem('theme', 'dark');
+    }
+
+    // Cambia le icone del pulsante
+    const sunIcon = document.querySelector('#theme-toggle .fa-sun-bright');
+    const moonIcon = document.querySelector('#theme-toggle .fa-moon');
+    
+    if (sunIcon && moonIcon) {
       if (currentTheme) {
-        body.classList.remove('dark-mode');
-        localStorage.setItem('theme', 'light');
+        // Se il tema corrente è scuro, mostra l'icona del sole e nascondi la luna
+        sunIcon.style.display = 'inline';
+        moonIcon.style.display = 'none';
       } else {
-        body.classList.add('dark-mode');
-        localStorage.setItem('theme', 'dark');
+        // Se il tema corrente è chiaro, mostra l'icona della luna e nascondi il sole
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'inline';
       }
     }
-  
-    // Aggiungi un listener al bottone per il toggle
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggleButton = document.getElementById('theme-toggle');
-      if (toggleButton) {
-        toggleButton.addEventListener('click', toggleTheme);
-      }
-      
-      // Recupera la preferenza di tema dal localStorage
-      const savedTheme = localStorage.getItem('theme');
+  }
+
+  // Aggiungi un listener al bottone per il toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('theme-toggle');
+    if (toggleButton) {
+      toggleButton.addEventListener('click', toggleTheme);
+    }
+    
+    // Recupera la preferenza di tema dal localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
+
+    // Imposta le icone del pulsante in base al tema iniziale
+    const sunIcon = document.querySelector('#theme-toggle .fa-sun-bright');
+    const moonIcon = document.querySelector('#theme-toggle .fa-moon');
+    
+    if (sunIcon && moonIcon) {
       if (savedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'inline';
+      } else {
+        sunIcon.style.display = 'inline';
+        moonIcon.style.display = 'none';
       }
-    });
+    }
+  });
   </script>
   
   </body>
