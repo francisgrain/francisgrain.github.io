@@ -242,19 +242,23 @@ body.dark-mode .navbar-nav .nav-link:focus {
 }
 
 body.dark-mode .btn-floating {
-  background-color: #444; /* Cambia colore di sfondo per pulsante in modalità scura */
+  background-color: #222; /* Cambia colore di sfondo per pulsante in modalità scura */
   color: #ddd; /* Colore del testo per pulsante in modalità scura */
 }
 
 body.dark-mode .btn-light {
-  background-color: #555;
+  background-color: #222;
   color: #ddd;
 }
 
 body.dark-mode .section-divider {
-  background-color: #555;
+  background-color: #EEEEEE;
 }
 
 body.dark-mode .p-3 {
   background-color: #444; /* Cambia colore di sfondo per elementi con classe .p-3 */
+}
+
+body.dark-mode .description-one {
+  color: #fff; /* Cambia il colore del testo a bianco per gli elementi con classe .description-one in modalità scura */
 }
