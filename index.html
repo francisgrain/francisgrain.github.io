@@ -531,7 +531,7 @@
 
   // Aggiungi un listener al bottone per il toggle
   document.addEventListener('DOMContentLoaded', () => {
-    const toggleButton = document.getElementById('theme-toggle');
+    const toggleButton = document.getElementById('theme-toggler');
     if (toggleButton) {
       toggleButton.addEventListener('click', toggleTheme);
     }
@@ -543,8 +543,8 @@
     }
 
     // Imposta le icone del pulsante in base al tema iniziale
-    const sunIcon = document.querySelector('#theme-toggle .fa-sun-bright');
-    const moonIcon = document.querySelector('#theme-toggle .fa-moon');
+    const sunIcon = document.querySelector('#theme-toggler .fa-sun-bright');
+    const moonIcon = document.querySelector('#theme-toggler .fa-moon');
     
     if (sunIcon && moonIcon) {
       if (savedTheme === 'dark') {
