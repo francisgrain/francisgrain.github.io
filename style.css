@@ -292,6 +292,15 @@ body.dark-mode #theme-toggler .fa-moon {
 }
 
 #theme-toggler {
-  border: none;
-  outline: none;
+  background: none; /* Rimuove lo sfondo */
+  border: none; /* Rimuove il bordo */
+  outline: none; /* Rimuove l'outline quando il pulsante è selezionato */
+  cursor: pointer; /* Cambia il cursore a una mano per indicare che è cliccabile */
+  padding: 0; /* Rimuove il padding predefinito */
+  font-size: 24px; /* Dimensione delle icone (puoi regolarla) */
+  color: inherit; /* Mantiene il colore del testo ereditato */
+}
+
+#theme-toggler i {
+  display: inline; /* Mostra le icone inline */
 }
