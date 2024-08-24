@@ -225,7 +225,7 @@ h3 {
 /* Modalità scura */
 body.dark-mode {
   background-color: #333;
-  color: #ddd;
+  color: #333;
 }
 
 body.dark-mode .navbar {
