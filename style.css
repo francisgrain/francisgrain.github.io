@@ -47,6 +47,12 @@ h3 {
   font-weight: bold;
 }
 
+.card {
+  background-color: #fff; /* Colore di sfondo di base per le card */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombra della card */
+}
+
 .lead {
   padding-right: 30px;
   padding-bottom: 30px;
