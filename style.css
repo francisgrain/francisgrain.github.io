@@ -19,7 +19,7 @@ body {
 }
 
 .navbar-toggler {
-  position: absolute;
+  position: top;
   right: 1rem; /* Sposta il pulsante a destra */
   top: 50%;
   z-index: 1; /* Assicura che il pulsante sia sopra gli altri elementi */
