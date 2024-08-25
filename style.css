@@ -9,7 +9,7 @@
 body {
   background-color: #eef7ff;
   color: black;
-  transition: background-color 0.6s, color 0.6s;
+  transition: background-color 2s, color 2s;
 }
 
 .navbar-brand {
@@ -22,6 +22,7 @@ body {
   font-family: "Duru Sans", sans-serif;
   font-size: 1.1rem;
   text-decoration: none;
+  transition: background-color 2s, color 2s;
 }
 
 .navbar-nav .nav-link:hover,
@@ -45,12 +46,20 @@ h3 {
   padding-bottom: 20px;
   padding-left: 30px;
   font-weight: bold;
+    transition: background-color 2s, color 2s;
+
 }
 
 .card {
   background-color: #fff; /* Colore di sfondo di base per le card */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombra della card */
+    transition: background-color 2s, color 2s;
+
+}
+.p-3 {
+      transition: background-color 2s, color 2s;
+
 }
 
 .lead {
@@ -58,24 +67,34 @@ h3 {
   padding-bottom: 30px;
   padding-left: 30px;
   text-align: justify;
+
 }
 
 .lead,
 h3 {
   font-family: "Duru Sans", sans-serif;
   font-size: 1.3rem;
+      transition: background-color 2s, color 2s;
+
 }
 
 .button-container {
   text-align: center; /* Centra il pulsante */
   margin-top: -10px; /* Riduce lo spazio sopra il pulsante */
   margin-bottom: 35px;
+  
 }
 
 .button-container .btn {
   display: inline-block;
   margin-top: 0; /* Elimina il margine superiore predefinito */
   padding: 10px 20px; /* Imposta una dimensione adeguata del pulsante */
+  
+}
+
+.btn-light {
+    transition: background-color 5s, color 5s;
+  
 }
 
 .section-divider {
@@ -84,6 +103,8 @@ h3 {
   background-color: #f0f0f0;
   overflow: hidden;
   margin: 20px 0;
+      transition: background-color 2s, color 2s;
+
 }
 
 .section-divider::before,
@@ -153,7 +174,7 @@ h3 {
 }
 
 .glitch-text::after {
-  animation: subtle-glitch-after 3s infinite linear alternate;
+  animation: subtle-glitch-after 3s infinite ease-in alternate;
   animation-delay: 4s; /* Ritardo di 4 secondi */
   color: #c83349; /* Colore glitch limegreen */
 }
@@ -230,8 +251,8 @@ h3 {
 
 /* Modalità scura */
 body.dark-mode {
-  background-color: #333;
-  color: #333;
+  background-color: #0F0F0F;
+  color: #0F0F0F;
 }
 
 body.dark-mode .navbar {
@@ -239,7 +260,7 @@ body.dark-mode .navbar {
 }
 
 body.dark-mode .navbar-nav .nav-link {
-  color: #ddd; /* Colore del testo della navbar in modalità scura */
+  color: #230000; /* Colore del testo della navbar in modalità scura */
 }
 
 body.dark-mode .navbar-nav .nav-link:hover,
@@ -248,27 +269,35 @@ body.dark-mode .navbar-nav .nav-link:focus {
 }
 
 body.dark-mode .btn-floating {
-  background-color: #444; /* Cambia colore di sfondo per pulsante in modalità scura */
-  color: #ddd; /* Colore del testo per pulsante in modalità scura */
+  display: inline-flex; /* Cambia display a inline-flex */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra orizzontalmente */
+  width: 35px; /* Dimensione fissa del pulsante */
+  height: 35px; /* Dimensione fissa del pulsante */
+  padding: 0; /* Rimuove padding extra */
+  font-size: 15px; /* Puoi regolare la dimensione del simbolo */
+  border-radius: 50%; /* Mantiene il bottone rotondo */
+  transition: background-color 0.3s ease; /* Transizione per l'hover */
 }
 
 body.dark-mode .btn-light {
-  background-color: #555;
+  background-color: #900;
   color: #ddd;
 }
 
 body.dark-mode .section-divider {
-  background-color: #555;
+  background-color: #490101;
 }
 
 body.dark-mode .p-3 {
-  background-color: #444; /* Cambia colore di sfondo per elementi con classe .p-3 */
+  background-color: #230000; /* Cambia colore di sfondo per elementi con classe .p-3 */
 }
 
 body.dark-mode .card {
-  background-color: #444; /* Cambia colore di sfondo per tutte le card in modalità scura */
+  background-color: #230000; /* Cambia colore di sfondo per tutte le card in modalità scura */
   color: #ddd; /* Cambia colore del testo all'interno della card */
   box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Cambia l'ombra per adattarsi alla modalità scura */
+
 }
 
 /* Icona per la modalità scura */
