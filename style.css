@@ -18,6 +18,10 @@ body {
   flex-grow: 1; /* Occupa tutto lo spazio disponibile */
 }
 
+.navbar-collapse.collapse.show {
+  display: block;
+}
+
 .navbar-toggler {
   position: absolute;
   right: 1rem; /* Sposta il pulsante a destra */
