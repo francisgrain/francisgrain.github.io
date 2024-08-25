@@ -10,6 +10,9 @@ body {
   background-color: #eef7ff;
   color: black;
   transition: background-color 2s, color 2s;
+  margin: 0;
+  padding: 0;
+  font-family: "Duru Sans", sans-serif;
 }
 
 .navbar-brand {
@@ -19,16 +22,17 @@ body {
 }
 
 .navbar-toggler {
-  position: top;
-  right: 1rem; /* Sposta il pulsante a destra */
-  top: 50%;
-  z-index: 1; /* Assicura che il pulsante sia sopra gli altri elementi */
+  position: fixed; /* Cambiato a fixed per farlo rimanere fermo rispetto alla viewport */
+  right: 0.5rem; /* Mantiene il pulsante a destra */
+  top: 0.5rem; /* Puoi regolare questo valore per un corretto allineamento verticale */
+  transform: none; /* Rimuove la trasformazione, visto che usiamo "fixed" */
+  z-index: 1050; /* Mantiene il pulsante sopra il contenuto */
   margin-top: 0; /* Rimuove qualsiasi margine superiore */
+  padding: 0.5rem; /* Aggiunge un po' di padding per migliorare l'area di clic */
 }
 
 .navbar-nav .nav-link {
   color: black; /* Colore del testo della navbar */
-  font-family: "Duru Sans", sans-serif;
   font-size: 1.1rem;
   text-decoration: none;
   transition: background-color 2s, color 2s;
@@ -55,55 +59,46 @@ h3 {
   padding-bottom: 20px;
   padding-left: 30px;
   font-weight: bold;
-    transition: background-color 2s, color 2s;
-
+  transition: background-color 2s, color 2s;
 }
 
 .card {
   background-color: #fff; /* Colore di sfondo di base per le card */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombra della card */
-    transition: background-color 2s, color 2s;
-
+  transition: background-color 2s, color 2s;
 }
-.p-3 {
-      transition: background-color 2s, color 2s;
 
+.p-3 {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 2s, color 2s;
 }
 
 .lead {
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  padding: 0 30px;
   text-align: justify;
-
 }
 
-.lead,
-h3 {
-  font-family: "Duru Sans", sans-serif;
+.lead, h3 {
   font-size: 1.3rem;
-      transition: background-color 2s, color 2s;
-
 }
 
 .button-container {
   text-align: center; /* Centra il pulsante */
   margin-top: -10px; /* Riduce lo spazio sopra il pulsante */
   margin-bottom: 35px;
-  
 }
 
 .button-container .btn {
   display: inline-block;
   margin-top: 0; /* Elimina il margine superiore predefinito */
   padding: 10px 20px; /* Imposta una dimensione adeguata del pulsante */
-  
 }
 
 .btn-light {
-    transition: background-color 5s, color 5s;
-  
+  transition: background-color 5s, color 5s;
 }
 
 .section-divider {
@@ -112,8 +107,7 @@ h3 {
   background-color: #f0f0f0;
   overflow: hidden;
   margin: 20px 0;
-      transition: background-color 2s, color 2s;
-
+  transition: background-color 2s, color 2s;
 }
 
 .section-divider::before,
@@ -158,7 +152,6 @@ h3 {
 
 .glitch-text {
   position: relative;
-  font-family: "Duru Sans", sans-serif;
   font-size: 1.3rem;
   color: black;
   animation: subtle-glitch 3s infinite;
@@ -189,8 +182,7 @@ h3 {
 }
 
 @keyframes subtle-glitch {
-  0%,
-  100% {
+  0%, 100% {
     transform: translate(0);
   }
   30% {
@@ -202,8 +194,7 @@ h3 {
 }
 
 @keyframes subtle-glitch-before {
-  0%,
-  100% {
+  0%, 100% {
     clip: rect(0, 900px, 0, 0);
     transform: translate(0);
   }
@@ -218,8 +209,7 @@ h3 {
 }
 
 @keyframes subtle-glitch-after {
-  0%,
-  100% {
+  0%, 100% {
     clip: rect(0, 900px, 0, 0);
     transform: translate(0);
   }
@@ -306,7 +296,6 @@ body.dark-mode .card {
   background-color: #230000; /* Cambia colore di sfondo per tutte le card in modalità scura */
   color: #ddd; /* Cambia colore del testo all'interno della card */
   box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Cambia l'ombra per adattarsi alla modalità scura */
-
 }
 
 /* Icona per la modalità scura */
@@ -341,4 +330,52 @@ body.dark-mode #theme-toggler .fa-moon {
 
 #theme-toggler i {
   display: inline; /* Mostra le icone inline */
+}
+
+/* Media Queries per dispositivi mobili e schermi di piccole dimensioni */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1rem; /* Riduce la dimensione del testo per piccoli schermi */
+  }
+
+  .navbar-toggler {
+    right: 0.25rem; /* Sposta il pulsante a destra per i piccoli schermi */
+    top: 0.25rem; /* Regola l'allineamento verticale */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem; /* Riduce la dimensione del testo dei link */
+  }
+
+  .glitch-text {
+    font-size: 1.1rem; /* Riduce la dimensione del testo per piccoli schermi */
+  }
+
+  .skills-container {
+    gap: 10px; /* Riduce lo spazio tra le icone */
+  }
+
+  .skill-icon {
+    width: 80px; /* Riduce la dimensione delle icone per piccoli schermi */
+  }
+}
+
+/* Media Queries per tablet e schermi di medie dimensioni */
+@media (min-width: 577px) and (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.1rem; /* Dimensione del testo per tablet e schermi medi */
+  }
+
+  .navbar-toggler {
+    right: 0.5rem; /* Mantiene il pulsante a destra per schermi medi */
+    top: 0.5rem; /* Mantiene l'allineamento verticale */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.1rem; /* Dimensione del testo dei link */
+  }
+
+  .glitch-text {
+    font-size: 1.2rem; /* Dimensione del testo per schermi medi */
+  }
 }
