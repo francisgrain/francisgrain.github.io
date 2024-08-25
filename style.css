@@ -14,7 +14,15 @@ body {
 
 .navbar-brand {
   font-family: "Duru Sans", sans-serif;
-  padding-right: 270px;
+  padding-right: 1rem;
+  flex-grow: 1; /* Occupa tutto lo spazio disponibile */
+}
+
+.navbar-toggler {
+  position: absolute;
+  right: 1rem; /* Sposta il pulsante a destra */
+  top: 50%;
+  transform: translateY(-50%); /* Centra verticalmente il pulsante */
 }
 
 .navbar-nav .nav-link {
