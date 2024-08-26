@@ -326,7 +326,21 @@ body.dark-mode #theme-toggler .fa-moon {
   display: inline; /* Mostra le icone inline */
 }
 
+@media (max-width: 336px) {
+  .navbar {
+    display: block; /* Cambia il display a block per un layout più semplice */
+    text-align: center; /* Centra il contenuto all'interno della navbar */
+  }
 
+  .navbar-brand {
+padding-left: 1rem;  
+  }
+  
+  .navbar-toggler {
+    margin: 0 auto; /* Imposta un margine automatico per centrare l'elemento */
+    position: relative;
+  }
+}
 
 
 
