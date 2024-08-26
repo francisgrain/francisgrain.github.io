@@ -274,20 +274,20 @@ body.dark-mode .btn-floating {
 }
 
 body.dark-mode .btn-light {
-  background-color: #900;
+  background-color: #7E2553;
   color: #ddd;
 }
 
 body.dark-mode .section-divider {
-  background-color: #490101;
+  background-color: #7E2553;
 }
 
 body.dark-mode .p-3 {
-  background-color: #230000; /* Cambia colore di sfondo per elementi con classe .p-3 */
+  background-color: #423F3E; /* Cambia colore di sfondo per elementi con classe .p-3 */
 }
 
 body.dark-mode .card {
-  background-color: #230000; /* Cambia colore di sfondo per tutte le card in modalità scura */
+  background-color: #423F3E; /* Cambia colore di sfondo per tutte le card in modalità scura */
   color: #ddd; /* Cambia colore del testo all'interno della card */
   box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Cambia l'ombra per adattarsi alla modalità scura */
 }
@@ -325,6 +325,24 @@ body.dark-mode #theme-toggler .fa-moon {
 #theme-toggler i {
   display: inline; /* Mostra le icone inline */
 }
+
+@media (max-width: 336px) {
+  .navbar {
+    display: block; /* Cambia il display a block per un layout più semplice */
+    text-align: center; /* Centra il contenuto all'interno della navbar */
+  }
+
+  .navbar-brand {
+padding-left: 1rem;  
+  }
+  
+  .navbar-toggler {
+    margin: 0 auto; /* Imposta un margine automatico per centrare l'elemento */
+    position: relative;
+  }
+}
+
+
 
 /* Media Queries per dispositivi mobili e schermi di piccole dimensioni */
 @media (max-width: 576px) {
