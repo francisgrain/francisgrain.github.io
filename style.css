@@ -122,6 +122,7 @@ h3 {
   animation-delay: 0.75s;
 }
 
+/*regolare l'immagine della sezione about me*/
 .img-about-me {
   width: 150px; /* Imposta la larghezza dell'immagine */
   border-radius: 10%; /* Rendi l'immagine circolare */
