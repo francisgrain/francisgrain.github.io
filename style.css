@@ -403,6 +403,7 @@ padding-left: 1rem;
   .glitch-text {
     font-size: 1.2rem; /* Dimensione del testo per schermi medi */
   }
+}
 
 @media (max-width: 768px) {
   .card {
@@ -423,5 +424,4 @@ padding-left: 1rem;
   .text-container {
     padding: 0 20px; /* Aggiunge un po' di spazio ai lati del testo */
   }
-}
 }
