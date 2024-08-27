@@ -404,7 +404,6 @@ padding-left: 1rem;
     font-size: 1.2rem; /* Dimensione del testo per schermi medi */
   }
 
-  /* Media Query per display più piccoli */
 @media (max-width: 768px) {
   .card {
     flex-direction: column; /* Dispone gli elementi in colonna */
