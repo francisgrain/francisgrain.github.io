@@ -124,10 +124,15 @@ h3 {
 
 /*regolare l'immagine della sezione about me*/
 .img-about-me {
-  width: 150px; /* Imposta la larghezza dell'immagine */
-  border-radius: 10%; /* Rendi l'immagine circolare */
+  width: 250px; /* Imposta la larghezza dell'immagine */
+  border-radius: 50%; /* Rendi l'immagine circolare */
   object-fit: cover; /* Adatta l'immagine al contenitore */
-  margin-right: 1rem;
+  transition: transform 0.9s ease, box-shadow 0.9s ease; /* Aggiungi una transizione fluida */
+}
+
+.img-about-me:hover {
+  transform: scale(1.1); /* Ingrandisci l'immagine al passaggio del mouse */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Aggiungi un'ombra */
 }
 
 @keyframes glitch {
