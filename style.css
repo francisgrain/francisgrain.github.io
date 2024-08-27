@@ -403,4 +403,26 @@ padding-left: 1rem;
   .glitch-text {
     font-size: 1.2rem; /* Dimensione del testo per schermi medi */
   }
+
+  /* Media Query per display più piccoli */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    text-align: center; /* Centra il testo e l'immagine */
+  }
+
+  .img-container {
+    order: -1; /* Posiziona l'immagine sopra il testo */
+    margin: 0 auto 20px; /* Centra l'immagine con margine sotto */
+  }
+
+  .img-about-me {
+    width: 150px; /* Riduce la dimensione dell'immagine */
+    margin: 0 auto; /* Centra l'immagine */
+  }
+
+  .text-container {
+    padding: 0 20px; /* Aggiunge un po' di spazio ai lati del testo */
+  }
+}
 }
