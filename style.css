@@ -405,6 +405,7 @@ padding-left: 1rem;
   }
 }
 
+/*posizionamento foto about me e container su schermi piccoli*/
 @media (max-width: 768px) {
   .card {
     flex-direction: column; /* Dispone gli elementi in colonna */
