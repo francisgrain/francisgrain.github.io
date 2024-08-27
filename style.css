@@ -43,6 +43,21 @@ body {
   color: #f1e3dd; /* Colore quando il link è in hover o in focus */
 }
 
+.img-container {
+  display: flex;
+  justify-content: center; /* Centra l'immagine orizzontalmente */
+  margin: auto auto; /* Rimuove qualsiasi margine */
+  margin-top: 1rem;
+}
+
+.img-about-me {
+  width: 250px; /* Mantiene la dimensione dell'immagine */
+  border-radius: 50%; /* Mantiene l'immagine circolare */
+  object-fit: cover; /* Mantiene l'adattamento dell'immagine al contenitore */
+  transition: transform 0.9s ease, box-shadow 0.9s ease;
+  margin-left: 0 !important; /* Rimuove il margine sinistro aggiunto dalla classe ms-3 */
+}
+
 .btn-floating {
   display: inline-flex; /* Cambia display a inline-flex */
   align-items: center; /* Centra verticalmente */
@@ -414,7 +429,8 @@ padding-left: 1rem;
 
   .img-container {
     order: -1; /* Posiziona l'immagine sopra il testo */
-    margin: 0 auto 20px; /* Centra l'immagine con margine sotto */
+    margin: auto auto; /* Centra l'immagine con margine sotto */
+    margin-top: 1rem;
   }
 
   .img-about-me {
@@ -422,7 +438,7 @@ padding-left: 1rem;
     margin: 0 auto; /* Centra l'immagine */
   }
 
-  .text-container {
-    padding: 0 20px; /* Aggiunge un po' di spazio ai lati del testo */
+  h3 {
+    padding: 0;
   }
 }
