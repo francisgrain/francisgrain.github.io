@@ -380,7 +380,7 @@ padding-left: 1rem;
 
   .navbar-toggler {
     right: 0.25rem; /* Sposta il pulsante a destra per i piccoli schermi */
-    top: 0.25rem; /* Regola l'allineamento verticale */
+    top: auto; /* Regola l'allineamento verticale */
   }
 
   .navbar-nav .nav-link {
@@ -408,7 +408,7 @@ padding-left: 1rem;
 
   .navbar-toggler {
     right: 0.5rem; /* Mantiene il pulsante a destra per schermi medi */
-    top: 0.5rem; /* Mantiene l'allineamento verticale */
+    top:auto;
   }
 
   .navbar-nav .nav-link {
