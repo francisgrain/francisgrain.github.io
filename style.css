@@ -285,6 +285,10 @@ h3 {
   height: auto; /* Mantiene le proporzioni */
 }
 
+.p-3.socials {
+    border-radius: 0;
+}
+
 /* Modalità scura */
 body.dark-mode {
   background-color: #0F0F0F;
@@ -392,7 +396,7 @@ body.dark-mode footer {
   transition: background-color 2s, color 2s;
 }
 
-@media (max-width: 355px) {
+@media (max-width: 375px) {
   .navbar {
     display: block; /* Cambia il display a block per un layout più semplice */
     text-align: center; /* Centra il contenuto all'interno della navbar */
