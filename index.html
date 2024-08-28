@@ -26,10 +26,10 @@
 
   <body class="d-flex flex-column h-100" oncontextmenu="return false">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand glitch-text" href="#">Francesco Grande # Portfolio</a>
-        <img
+        <a class="navbar-brand d-flex align-items-center glitch-text" href="#">
+          <img
             src="assets/icons/favicon.ico"
             alt="fotobadge"
             width="32"
@@ -38,9 +38,17 @@
           />
           <span class="header-title">Francesco Grande # Portfolio</span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
-      </button>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a
@@ -69,9 +77,10 @@
               Contact
             </a>
             <!-- Aggiungi questo bottone nella navbar -->
-            <button id="theme-toggler" aria-label="Toggle theme">
-              <i class="fas fa-sun"></i>
-          </button>
+            <button id="theme-toggler">
+              <i class="fa-solid fa-sun"></i>
+              <i class="fa-solid fa-moon" style="display: none"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -476,16 +485,65 @@
     <!-- MDBootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
     <script>
-      // Script per il toggle del tema
-      const themeToggler = document.getElementById('theme-toggler');
+      // Funzione per il toggle tra modalità chiara e scura
+      function toggleTheme() {
         const body = document.body;
-        const icon = themeToggler.querySelector('i');
+        const currentTheme = body.classList.contains("dark-mode");
+        console.log("Current Theme:", currentTheme); // Debug
 
-        themeToggler.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            icon.classList.toggle('fa-sun');
-            icon.classList.toggle('fa-moon');
-        });
+        // Cambia il tema
+        if (currentTheme) {
+          body.classList.remove("dark-mode");
+          localStorage.setItem("theme", "light");
+        } else {
+          body.classList.add("dark-mode");
+          localStorage.setItem("theme", "dark");
+        }
+
+        // Cambia le icone del pulsante
+        const sunIcon = document.querySelector("#theme-toggler .fa-sun");
+        const moonIcon = document.querySelector("#theme-toggler .fa-moon");
+
+        if (sunIcon && moonIcon) {
+          if (currentTheme) {
+            // Se il tema corrente è scuro, mostra l'icona del sole e nascondi la luna
+            sunIcon.style.display = "inline";
+            moonIcon.style.display = "none";
+          } else {
+            // Se il tema corrente è chiaro, mostra l'icona della luna e nascondi il sole
+            sunIcon.style.display = "none";
+            moonIcon.style.display = "inline";
+          }
+        }
+      }
+
+      // Aggiungi un listener al bottone per il toggle
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleButton = document.getElementById("theme-toggler");
+        if (toggleButton) {
+          toggleButton.addEventListener("click", toggleTheme);
+        }
+
+        // Recupera la preferenza di tema dal localStorage
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+          document.body.classList.add("dark-mode");
+        }
+
+        // Imposta le icone del pulsante in base al tema iniziale
+        const sunIcon = document.querySelector("#theme-toggler .fa-sun");
+        const moonIcon = document.querySelector("#theme-toggler .fa-moon");
+
+        if (sunIcon && moonIcon) {
+          if (savedTheme === "dark") {
+            sunIcon.style.display = "none";
+            moonIcon.style.display = "inline";
+          } else {
+            sunIcon.style.display = "inline";
+            moonIcon.style.display = "none";
+          }
+        }
+      });
     </script>
   </body>
 </html>
