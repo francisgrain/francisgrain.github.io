@@ -1,5 +1,3 @@
-/*last vers 28.08.2024*/
-
 @import url("https://fonts.googleapis.com/css2?family=Duru+Sans&family=Poiret+One&display=swap");
 
 #prevent-select {
@@ -286,6 +284,9 @@ body.dark-mode {
   color: #0F0F0F;
 }
 
+body.dark-mode .header-title{
+  color: #F8F9FA;
+}
 body.dark-mode .navbar {
   background-color: #423F3E !important;
 }
@@ -294,17 +295,14 @@ body.sark-mode .socials {
   background-color: #423F3E !important;
 }
 
-body.dark-mode .navbar {
-  background-color: #222;
-}
 
 body.dark-mode .navbar-nav .nav-link {
-  color: #230000; /* Colore del testo della navbar in modalità scura */
+  color: #F8F9FA; /* Colore del testo della navbar in modalità scura */
 }
 
 body.dark-mode .navbar-nav .nav-link:hover,
 body.dark-mode .navbar-nav .nav-link:focus {
-  color: #f1e3dd; /* Colore quando il link è in hover o in focus */
+  color: #423F3E; /* Colore quando il link è in hover o in focus */
 }
 
 body.dark-mode .btn-floating {
@@ -373,7 +371,7 @@ body.dark-mode #theme-toggler .fa-moon {
 }
 
 body.dark-mode footer {
-  color: #423F3E;
+  color: #F8F9FA;
   transition: background-color 2s, color 2s;
 }
 
