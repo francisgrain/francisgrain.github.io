@@ -15,6 +15,14 @@ body {
   font-family: "Duru Sans", sans-serif;
 }
 
+.navbar {
+  background-color: #F8F9FA !important;
+}
+
+.socials {
+  background-color: #F8F9FA !important;
+}
+
 .navbar-brand {
   font-family: "Duru Sans", sans-serif;
   padding-right: 1rem;
@@ -277,6 +285,14 @@ body.dark-mode {
 }
 
 body.dark-mode .navbar {
+  background-color: #423F3E !important;
+}
+
+body.sark-mode .socials {
+  background-color: #423F3E !important;
+}
+
+body.dark-mode .navbar {
   background-color: #222;
 }
 
@@ -352,6 +368,11 @@ body.dark-mode #theme-toggler .fa-moon {
 
 #theme-toggler i {
   display: inline; /* Mostra le icone inline */
+}
+
+body.dark-mode footer {
+  color: #F8F9FA;
+  transition: background-color 2s, color 2s;
 }
 
 @media (max-width: 355px) {
