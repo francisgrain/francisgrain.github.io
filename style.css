@@ -1,5 +1,3 @@
-/* last vers. 28.08.2024*/
-
 @import url("https://fonts.googleapis.com/css2?family=Duru+Sans&family=Poiret+One&display=swap");
 
 #prevent-select {
@@ -293,7 +291,7 @@ body.dark-mode .navbar {
   background-color: #423F3E !important;
 }
 
-body.sark-mode .socials {
+body.dark-mode .socials {
   background-color: #423F3E !important;
 }
 
@@ -317,6 +315,8 @@ body.dark-mode .btn-floating {
   font-size: 15px; /* Puoi regolare la dimensione del simbolo */
   border-radius: 50%; /* Mantiene il bottone rotondo */
   transition: background-color 0.3s ease; /* Transizione per l'hover */
+    color: #F8F9FA;
+
 }
 
 body.dark-mode .btn-light {
