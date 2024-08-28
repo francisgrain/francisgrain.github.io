@@ -51,12 +51,11 @@ body {
   color: black; /* Colore del testo della navbar */
   font-size: 1.1rem;
   text-decoration: none;
-  transition: background-color 2s, color 2s;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
-  color: #f1e3dd; /* Colore quando il link è in hover o in focus */
+  color: #7E2553; /* Colore quando il link è in hover o in focus */
 }
 
 .img-container {
@@ -318,7 +317,7 @@ body.dark-mode .navbar-nav .nav-link {
 
 body.dark-mode .navbar-nav .nav-link:hover,
 body.dark-mode .navbar-nav .nav-link:focus {
-  color: #423F3E; /* Colore quando il link è in hover o in focus */
+color: #7E2553; /* Colore quando il link è in hover o in focus */
 }
 
 body.dark-mode .btn-floating {
