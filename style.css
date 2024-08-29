@@ -17,7 +17,7 @@ body {
 
 .navbar {
   background-color: #F8F9FA;
-    transition: background-color 2s, color 2s;
+  transition: background-color 2s, color 2s;
 
 }
 
@@ -27,7 +27,7 @@ body {
 
 .socials {
   background-color: #F8F9FA;
-    transition: background-color 2s, color 2s;
+  transition: background-color 2s, color 2s;
 
 }
 
@@ -102,6 +102,8 @@ h3 {
 .lead {
   padding: 0 30px;
   text-align: justify;
+  transition: background-color 2s, color 2s;
+
 }
 
 .lead, h3 {
@@ -286,7 +288,8 @@ h3 {
 }
 
 .p-3.socials {
-    border-radius: 0;
+  background-color: #F8F9FA;
+  border-radius: 0;
 }
 
 /* Modalità scura */
@@ -334,7 +337,7 @@ body.dark-mode .btn-floating {
   font-size: 15px; /* Puoi regolare la dimensione del simbolo */
   border-radius: 50%; /* Mantiene il bottone rotondo */
   transition: background-color 0.3s ease; /* Transizione per l'hover */
-    color: #F8F9FA;
+  color: #F8F9FA;
 
 }
 
