@@ -372,12 +372,12 @@ body.dark-mode #theme-toggler .fa-sun-bright {
 
 /* Icona per la modalità scura */
 #theme-toggler .fa-moon {
-  display: none;
+  display: inline;
 }
 
 /* Icona per la modalità scura */
 body.dark-mode #theme-toggler .fa-moon {
-  display: inline;
+  display: none;
 }
 
 #theme-toggler {
