@@ -20,12 +20,12 @@ function toggleTheme() {
   if (sunIcon && moonIcon) {
     if (currentTheme) {
       // Se il tema corrente è scuro, mostra l'icona del sole e nascondi la luna
-      sunIcon.style.display = "inline";
-      moonIcon.style.display = "none";
-    } else {
-      // Se il tema corrente è chiaro, mostra l'icona della luna e nascondi il sole
       sunIcon.style.display = "none";
       moonIcon.style.display = "inline";
+    } else {
+      // Se il tema corrente è chiaro, mostra l'icona della luna e nascondi il sole
+      sunIcon.style.display = "inline";
+      moonIcon.style.display = "none";
     }
   }
 }
@@ -46,7 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const moonIcon = document.querySelector("#theme-toggler .fa-moon");
 
   if (sunIcon && moonIcon) {
-    sunIcon.style.display = "inline";
-    moonIcon.style.display = "none";
+    // Qui il tema sarà sempre "light", quindi mostriamo la luna e nascondiamo il sole
+    sunIcon.style.display = "none";
+    moonIcon.style.display = "inline";
   }
 });
