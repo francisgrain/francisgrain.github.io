@@ -19,12 +19,12 @@
         if (sunIcon && moonIcon) {
           if (currentTheme) {
             // Se il tema corrente è scuro, mostra l'icona del sole e nascondi la luna
-            sunIcon.style.display = "inline";
-            moonIcon.style.display = "none";
-          } else {
-            // Se il tema corrente è chiaro, mostra l'icona della luna e nascondi il sole
             sunIcon.style.display = "none";
             moonIcon.style.display = "inline";
+          } else {
+            // Se il tema corrente è chiaro, mostra l'icona della luna e nascondi il sole
+            sunIcon.style.display = "inline";
+            moonIcon.style.display = "none";
           }
         }
       }
