@@ -1,3 +1,4 @@
+      // Funzione per il toggle tra modalità chiara e scura
       function toggleTheme() {
         const body = document.body;
         const currentTheme = body.classList.contains("dark-mode");
