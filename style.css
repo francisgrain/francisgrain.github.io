@@ -364,6 +364,21 @@ body.dark-mode .card {
   box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Cambia l'ombra per adattarsi alla modalità scura */
 }
 
+#theme-toggler .fa-sun {
+  display: none;
+}
+
+body.dark-mode #theme-toggler .fa-sun {
+  display: inline;
+}
+
+#theme-toggler .fa-moon {
+  display: inline;
+}
+
+body.dark-mode #theme-toggler .fa-moon {
+  display: none;
+}
 
 #theme-toggler {
   background: none; /* Rimuove lo sfondo */
