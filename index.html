@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js/tarteaucitron.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js/tarteaucitron.js"
+    ></script>
 
     <script type="text/javascript">
-    tarteaucitron.init({
-    "privacyUrl": "", /* Privacy policy url */
-      "bodyPosition": "bottom", /* or top to bring it as first element for accessibility */
+      tarteaucitron.init({
+        privacyUrl: "" /* Privacy policy url */,
+        bodyPosition:
+          "bottom" /* or top to bring it as first element for accessibility */,
 
-    "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
-    "cookieName": "tarteaucitron", /* Cookie name */
+        hashtag: "#tarteaucitron" /* Open the panel with this hashtag */,
+        cookieName: "tarteaucitron" /* Cookie name */,
 
-    "orientation": "middle", /* Banner position (top - bottom) */
-   
-      "groupServices": false, /* Group services by category */
-      "showDetailsOnClick": true, /* Click to expand the description */
-      "serviceDefaultState": "wait", /* Default state (true - wait - false) */
-                       
-    "showAlertSmall": false, /* Show the small banner on bottom right */
-    "cookieslist": false, /* Show the cookie list */
-                       
-      "closePopup": false, /* Show a close X on the banner */
+        orientation: "middle" /* Banner position (top - bottom) */,
 
-      "showIcon": true, /* Show cookie icon to manage cookies */
-      //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
-      "iconPosition": "bottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+        groupServices: false /* Group services by category */,
+        showDetailsOnClick: true /* Click to expand the description */,
+        serviceDefaultState: "wait" /* Default state (true - wait - false) */,
 
-    "adblocker": false, /* Show a Warning if an adblocker is detected */
-                       
-      "DenyAllCta" : true, /* Show the deny all button */
-      "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
-      "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
-      "alwaysNeedConsent": false, /* Ask the consent for "Privacy by design" services */
-                       
-    "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+        showAlertSmall: false /* Show the small banner on bottom right */,
+        cookieslist: false /* Show the cookie list */,
 
-    "removeCredit": false, /* Remove credit link */
-    "moreInfoLink": true, /* Show more info link */
+        closePopup: false /* Show a close X on the banner */,
 
-      "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
-      "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
+        showIcon: true /* Show cookie icon to manage cookies */,
+        //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
+        iconPosition:
+          "BottomRight" /* BottomRight, BottomLeft, TopRight and TopLeft */,
 
-    //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
-                      
-      "readmoreLink": "", /* Change the default readmore link */
+        adblocker: false /* Show a Warning if an adblocker is detected */,
 
-      "mandatory": true, /* Show a message about mandatory cookies */
-      "mandatoryCta": true, /* Show the disabled accept button when mandatory on */
+        DenyAllCta: true /* Show the deny all button */,
+        AcceptAllCta: true /* Show the accept all button when highPrivacy on */,
+        highPrivacy: true /* HIGHLY RECOMMANDED Disable auto consent */,
+        alwaysNeedConsent: false /* Ask the consent for "Privacy by design" services */,
 
-      //"customCloserId": "", /* Optional a11y: Custom element ID used to open the panel */
-      
-      "googleConsentMode": true, /* Enable Google Consent Mode v2 for Google ads and GA4 */
-      
-      "partnersList": false /* Show the number of partners on the popup/middle banner */
-    });
+        handleBrowserDNTRequest: false /* If Do Not Track == 1, disallow all */,
+
+        removeCredit: false /* Remove credit link */,
+        moreInfoLink: true /* Show more info link */,
+
+        useExternalCss: false /* If false, the tarteaucitron.css file will be loaded */,
+        useExternalJs: false /* If false, the tarteaucitron.js file will be loaded */,
+
+        //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
+
+        readmoreLink: "" /* Change the default readmore link */,
+
+        mandatory: true /* Show a message about mandatory cookies */,
+        mandatoryCta: true /* Show the disabled accept button when mandatory on */,
+
+        //"customCloserId": "", /* Optional a11y: Custom element ID used to open the panel */
+
+        googleConsentMode: true /* Enable Google Consent Mode v2 for Google ads and GA4 */,
+
+        partnersList: false /* Show the number of partners on the popup/middle banner */,
+      });
     </script>
 
-
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WSJ8TCZL');</script>
-  <!-- End Google Tag Manager -->
-  
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WSJ8TCZL");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
@@ -95,9 +106,15 @@
 
   <body class="d-flex flex-column h-100" oncontextmenu="return false">
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSJ8TCZL"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WSJ8TCZL"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
@@ -152,7 +169,7 @@
             <!-- Aggiungi questo bottone nella navbar -->
             <button id="theme-toggler">
               <i class="fa-regular fa-sun"></i>
-              <i class="fa-regular fa-moon" style="display: inline;"></i>
+              <i class="fa-regular fa-moon" style="display: inline"></i>
             </button>
           </div>
         </div>
@@ -167,7 +184,8 @@
         <div class="container">
           <div class="container-fluid p-0">
             <div
-              class="card mx-auto d-flex flex-row align-items-center flex-wrap">
+              class="card mx-auto d-flex flex-row align-items-center flex-wrap"
+            >
               <div class="img-container">
                 <img
                   src="assets/images/fotobadge2.jpg"
@@ -518,23 +536,38 @@
       <section id="contact" class="mb-5">
         <div class="p-3 socials">
           <!-- Aggiungi qui i tuoi contatti e social media -->
-          <a href="https://www.linkedin.com/in/francescogrande1981/" class="btn btn-floating" target="_blank"
+          <a
+            href="https://www.linkedin.com/in/francescogrande1981/"
+            class="btn btn-floating"
+            target="_blank"
             ><i class="fab fa-linkedin"></i
           ></a>
-          <a href="https://github.com/francisgrain" class="btn btn-floating" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.facebook.com/francesco.chicco.81" class="btn btn-floating" target="_blank"
-            ><i class="fa-brands fa-facebook"></i></a>
+          <a
+            href="https://github.com/francisgrain"
+            class="btn btn-floating"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/francesco.chicco.81"
+            class="btn btn-floating"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
         </div>
       </section>
 
       <footer class="text-center mt-5">
         <p>&copy; 2024 Francesco Grande. Tutti i diritti riservati.</p>
         <div>
-          <img src="https://hitwebcounter.com/counter/counter.php?page=16084628&style=0038&nbdigits=5&type=ip&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0">
+          <img
+            src="https://hitwebcounter.com/counter/counter.php?page=16084628&style=0038&nbdigits=5&type=ip&initCount=0"
+            title="Counter Widget"
+            alt="Visit counter For Websites"
+            border="0"
+          />
         </div>
       </footer>
-      
-    
     </div>
 
     <!-- Bootstrap JS -->
@@ -546,11 +579,12 @@
     <script src="script.js"></script>
 
     <script type="text/javascript">
-      tarteaucitron.user.gtagUa = 'G-W4JT5SN59J';
+      tarteaucitron.user.gtagUa = "G-W4JT5SN59J";
       // tarteaucitron.user.gtagCrossdomain = ['example.com', 'example2.com'];
-      tarteaucitron.user.gtagMore = function () { /* add here your optionnal gtag() */ };
-      (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-      </script>
-
-    </body>
+      tarteaucitron.user.gtagMore = function () {
+        /* add here your optionnal gtag() */
+      };
+      (tarteaucitron.job = tarteaucitron.job || []).push("gtag");
+    </script>
+  </body>
 </html>
