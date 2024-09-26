@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js/tarteaucitron.js"
@@ -120,83 +120,65 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center glitch-text" href="#">
-      <img
-        src="assets/icons/favicon.ico"
-        alt="fotobadge"
-        width="32"
-        height="32"
-        class="rounded-circle me-2"
-      />
-      <span class="header-title">Francesco Grande # Portfolio</span>
-    </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ms-auto">
-        <a
-          class="nav-link active"
-          id="nav-aboutme-tab"
-          href="#aboutMe"
-          role="tab"
-          >About me</a
-        >
-        <a
-          class="nav-link"
-          id="nav-portfolio-tab"
-          href="#portfolio"
-          role="tab"
-          >Portfolio</a
-        >
-        <a class="nav-link" id="nav-skills-tab" href="#skills" role="tab"
-          >Skills</a
-        >
-        <a
-          class="nav-link"
-          id="nav-contact-tab"
-          href="mailto:francescogrande1981@gmail.com"
-          role="tab"
-        >
-          Contact
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center glitch-text" href="#">
+          <img
+            src="assets/icons/favicon.ico"
+            alt="fotobadge"
+            width="32"
+            height="32"
+            class="rounded-circle me-2"
+          />
+          <span class="header-title">Francesco Grande # Portfolio</span>
         </a>
-        <!-- Pulsante per fissare un appuntamento -->
-        <button id="appointment-button">
-          Fissa un appuntamento
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a
+              class="nav-link active"
+              id="nav-aboutme-tab"
+              href="#aboutMe"
+              role="tab"
+              >About me</a
+            >
+            <a
+              class="nav-link"
+              id="nav-portfolio-tab"
+              href="#portfolio"
+              role="tab"
+              >Portfolio</a
+            >
+            <a class="nav-link" id="nav-skills-tab" href="#skills" role="tab"
+              >Skills</a
+            >
+            <a
+              class="nav-link"
+              id="nav-contact-tab"
+              href="mailto:francescogrande1981@gmail.com"
+              role="tab"
+            >
+              Contact
+            </a>
+            <!-- Aggiungi questo bottone nella navbar -->
+            <button id="theme-toggler">
+              <i class="fa-regular fa-sun"></i>
+              <i class="fa-regular fa-moon" style="display: inline"></i>
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
-
-<!-- Google Calendar Appointment Scheduling begin -->
-<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-<script>
-(function() {
-  var target = document.getElementById('appointment-button');
-  window.addEventListener('load', function() {
-    calendar.schedulingButton.load({
-      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1m167Q4bfsh7yr1S8tcghGvLZ1Tajd5SFdmzXgSErxxOQ2RlnknWfg_lJ1B44pXR7oi8Z6NkC_?gv=true',
-      color: '#039BE5',
-      label: 'Fissa un appuntamento',
-      target,
-    });
-  });
-})();
-</script>
-<!-- end Google Calendar Appointment Scheduling -->
-
+    </nav>
 
     <!-- Main Content -->
     <br /><br />
@@ -550,6 +532,26 @@
             </div>
           </div>
         </div>
+
+        <!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1m167Q4bfsh7yr1S8tcghGvLZ1Tajd5SFdmzXgSErxxOQ2RlnknWfg_lJ1B44pXR7oi8Z6NkC_?gv=true',
+      color: '#039BE5',
+      label: 'Fissa un appuntamento',
+      target,
+    });
+  });
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
+
+
       </main>
     </div>
     <br /><br />
