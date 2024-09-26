@@ -218,6 +218,23 @@
                     Download CV
                   </a>
                 </div>
+                <!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1m167Q4bfsh7yr1S8tcghGvLZ1Tajd5SFdmzXgSErxxOQ2RlnknWfg_lJ1B44pXR7oi8Z6NkC_?gv=true',
+      color: '#039BE5',
+      label: 'Schedule a call',
+      target,
+    });
+  });
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
               </div>
             </div>
           </div>
@@ -533,23 +550,7 @@
           </div>
         </div>
 
-        <!-- Google Calendar Appointment Scheduling begin -->
-<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-<script>
-(function() {
-  var target = document.currentScript;
-  window.addEventListener('load', function() {
-    calendar.schedulingButton.load({
-      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1m167Q4bfsh7yr1S8tcghGvLZ1Tajd5SFdmzXgSErxxOQ2RlnknWfg_lJ1B44pXR7oi8Z6NkC_?gv=true',
-      color: '#039BE5',
-      label: 'Schedule a call',
-      target,
-    });
-  });
-})();
-</script>
-<!-- end Google Calendar Appointment Scheduling -->
+        
 
 
       </main>
