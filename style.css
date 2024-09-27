@@ -283,7 +283,7 @@ h3 {
 }
 
 .education-icon {
-  width: 100px; /* Dimensione delle icone */
+  width: 500px; /* Dimensione delle icone */
   height: auto; /* Mantiene le proporzioni */
 }
 
@@ -454,7 +454,7 @@ padding-left: 1rem;
   }
 
   .education-icon {
-    width: 80px; /* Riduce la dimensione delle icone per piccoli schermi */
+    width: 120px; /* Riduce la dimensione delle icone per piccoli schermi */
   }
 
   .skills-container {
