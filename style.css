@@ -273,6 +273,20 @@ h3 {
   text-align: justify;
 }
 
+.education-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* In caso di overflow, le icone andranno su una nuova riga */
+  gap: 15px; /* Spazio tra le icone */
+  padding: 10px;
+}
+
+.education-icon {
+  width: 100px; /* Dimensione delle icone */
+  height: auto; /* Mantiene le proporzioni */
+}
+
 .skills-container {
   display: flex;
   justify-content: center;
@@ -433,6 +447,14 @@ padding-left: 1rem;
 
   .glitch-text {
     font-size: 1.1rem; /* Riduce la dimensione del testo per piccoli schermi */
+  }
+  
+  .education-container {
+    gap: 10px; /* Riduce lo spazio tra le icone */
+  }
+
+  .education-icon {
+    width: 80px; /* Riduce la dimensione delle icone per piccoli schermi */
   }
 
   .skills-container {
