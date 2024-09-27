@@ -273,7 +273,19 @@ h3 {
   text-align: justify;
 }
 
+.education-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* In caso di overflow, le icone andranno su una nuova riga */
+  gap: 15px; /* Spazio tra le icone */
+  padding: 10px;
+}
 
+.education-icon {
+  width: 100px; /* Dimensione delle icone */
+  height: auto; /* Mantiene le proporzioni */
+}
 
 .skills-container {
   display: flex;
