@@ -468,7 +468,7 @@ padding-left: 1rem;
     gap: 10px; /* Riduce lo spazio tra le icone */
   }
 
-  .education-icon, .education-icon-two, .education-icon-three {
+  .education-icon, .education-icon-two, .education-icon-three, .education-icon-four {
     width: 120px; /* Riduce la dimensione delle icone per piccoli schermi */
   }
 
