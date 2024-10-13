@@ -297,6 +297,11 @@ h3 {
   height: auto; /* Mantiene le proporzioni */
 }
 
+.education-icon-four {
+  width: 250px; /* Dimensione delle icone */
+  height: auto; /* Mantiene le proporzioni */
+}
+
 .skills-container {
   display: flex;
   justify-content: center;
