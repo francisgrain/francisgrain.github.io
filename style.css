@@ -316,6 +316,14 @@ h3 {
   height: auto; /* Mantiene le proporzioni */
 }
 
+.icon-large {
+  font-size: 34px; /* Dimensioni icone maggiorate */
+}
+
+.description-large {
+  font-size: 1.20rem; /* Dimensioni testo maggiorate */
+}
+
 .p-3.socials {
   background-color: #F8F9FA;
   border-radius: 0;
