@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Duru+Sans&family=Poiret+One&display=swap");
 
 #prevent-select {
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body {
@@ -18,7 +18,6 @@ body {
 .navbar {
   background-color: #F8F9FA;
   transition: background-color 2s, color 2s;
-
 }
 
 .navbar-toggler-icon {
@@ -28,61 +27,66 @@ body {
 .socials {
   background-color: #F8F9FA;
   transition: background-color 2s, color 2s;
-
 }
 
 .navbar-brand {
   font-family: "Duru Sans", sans-serif;
   padding-right: 1rem;
-  flex-grow: 1; /* Occupa tutto lo spazio disponibile */
+  flex-grow: 1;
 }
 
 .navbar-toggler {
-  position: fixed; /* Cambiato a fixed per farlo rimanere fermo rispetto alla viewport */
-  right: 0.5rem; /* Mantiene il pulsante a destra */
-  top: 0.5rem; /* Puoi regolare questo valore per un corretto allineamento verticale */
-  transform: none; /* Rimuove la trasformazione, visto che usiamo "fixed" */
-  z-index: 1050; /* Mantiene il pulsante sopra il contenuto */
-  margin-top: 0; /* Rimuove qualsiasi margine superiore */
-  padding: 0.5rem; /* Aggiunge un po' di padding per migliorare l'area di clic */
+  position: fixed;
+  right: 0.5rem;
+  top: 0.5rem;
+  transform: none;
+  z-index: 1050;
+  margin-top: 0;
+  padding: 0.5rem;
 }
 
 .navbar-nav .nav-link {
-  color: black; /* Colore del testo della navbar */
+  color: black;
   font-size: 1.1rem;
   text-decoration: none;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
-  color: #7E2553; /* Colore quando il link è in hover o in focus */
+  color: #7E2553;
 }
 
 .img-container {
   display: flex;
-  justify-content: center; /* Centra l'immagine orizzontalmente */
-  margin: auto auto; /* Rimuove qualsiasi margine */
+  justify-content: center;
+  margin: auto auto;
   margin-top: 1rem;
 }
 
+/* Regole immagine About Me */
 .img-about-me {
-  width: 250px; /* Mantiene la dimensione dell'immagine */
-  border-radius: 50%; /* Mantiene l'immagine circolare */
-  object-fit: cover; /* Mantiene l'adattamento dell'immagine al contenitore */
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
   transition: transform 0.9s ease, box-shadow 0.9s ease;
-  margin-left: 0 !important; /* Rimuove il margine sinistro aggiunto dalla classe ms-3 */
+  margin-left: 0 !important;
+}
+
+.img-about-me:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .btn-floating {
-  display: inline-flex; /* Cambia display a inline-flex */
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra orizzontalmente */
-  width: 35px; /* Dimensione fissa del pulsante */
-  height: 35px; /* Dimensione fissa del pulsante */
-  padding: 0; /* Rimuove padding extra */
-  font-size: 15px; /* Puoi regolare la dimensione del simbolo */
-  border-radius: 50%; /* Mantiene il bottone rotondo */
-  transition: background-color 0.3s ease; /* Transizione per l'hover */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  font-size: 15px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 
 h3 {
@@ -93,9 +97,9 @@ h3 {
 }
 
 .card {
-  background-color: #fff; /* Colore di sfondo di base per le card */
+  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombra della card */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: background-color 2s, color 2s;
 }
 
@@ -103,7 +107,6 @@ h3 {
   padding: 0 30px;
   text-align: justify;
   transition: background-color 2s, color 2s;
-
 }
 
 .lead, h3 {
@@ -111,15 +114,15 @@ h3 {
 }
 
 .button-container {
-  text-align: center; /* Centra il pulsante */
-  margin-top: -10px; /* Riduce lo spazio sopra il pulsante */
+  text-align: center;
+  margin-top: -10px;
   margin-bottom: 35px;
 }
 
 .button-container .btn {
   display: inline-block;
-  margin-top: 0; /* Elimina il margine superiore predefinito */
-  padding: 10px 20px; /* Imposta una dimensione adeguata del pulsante */
+  margin-top: 0;
+  padding: 10px 20px;
 }
 
 .btn-light {
@@ -154,38 +157,14 @@ h3 {
   animation-delay: 0.75s;
 }
 
-/*regolare l'immagine della sezione about me*/
-.img-about-me {
-  width: 250px; /* Imposta la larghezza dell'immagine */
-  border-radius: 50%; /* Rendi l'immagine circolare */
-  object-fit: cover; /* Adatta l'immagine al contenitore */
-  transition: transform 0.9s ease, box-shadow 0.9s ease; /* Aggiungi una transizione fluida */
-}
-
-.img-about-me:hover {
-  transform: scale(1.1); /* Ingrandisci l'immagine al passaggio del mouse */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Aggiungi un'ombra */
-}
-
+/* Animazioni Glitch */
 @keyframes glitch {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(10px, -3px);
-  }
-  40% {
-    transform: translate(-8px, 4px);
-  }
-  60% {
-    transform: translate(5px, 10px);
-  }
-  80% {
-    transform: translate(-10px, -5px);
-  }
-  100% {
-    transform: translate(0);
-  }
+  0% { transform: translate(0); }
+  20% { transform: translate(10px, -3px); }
+  40% { transform: translate(-8px, 4px); }
+  60% { transform: translate(5px, 10px); }
+  80% { transform: translate(-10px, -5px); }
+  100% { transform: translate(0); }
 }
 
 .glitch-text {
@@ -193,7 +172,7 @@ h3 {
   font-size: 1.3rem;
   color: black;
   animation: subtle-glitch 3s infinite;
-  animation-delay: 5s; /* Ritardo di 5 secondi */
+  animation-delay: 5s;
 }
 
 .glitch-text::before,
@@ -203,73 +182,46 @@ h3 {
   left: 0;
   top: 0;
   opacity: 0.7;
-  color: rgba(255, 0, 0, 0.6); /* Colore glitch leggermente visibile */
-  clip: rect(0, 900px, 0, 0); /* Clip iniziale */
+  color: rgba(255, 0, 0, 0.6);
+  clip: rect(0, 900px, 0, 0);
 }
 
 .glitch-text::before {
   animation: subtle-glitch-before 3s infinite linear alternate;
-  animation-delay: 5.5s; /* Ritardo di 5.5 secondi */
-  color: rgba(0, 255, 255, 0.6); /* Colore glitch ciano */
+  animation-delay: 5.5s;
+  color: rgba(0, 255, 255, 0.6);
 }
 
 .glitch-text::after {
   animation: subtle-glitch-after 3s infinite ease-in alternate;
-  animation-delay: 4s; /* Ritardo di 4 secondi */
-  color: #c83349; /* Colore glitch limegreen */
+  animation-delay: 4s;
+  color: #c83349;
 }
 
 @keyframes subtle-glitch {
-  0%, 100% {
-    transform: translate(0);
-  }
-  30% {
-    transform: translate(1px, 1px); /* Movimento molto piccolo */
-  }
-  60% {
-    transform: translate(-1px, -1px); /* Movimento molto piccolo */
-  }
+  0%, 100% { transform: translate(0); }
+  30% { transform: translate(1px, 1px); }
+  60% { transform: translate(-1px, -1px); }
 }
 
 @keyframes subtle-glitch-before {
-  0%, 100% {
-    clip: rect(0, 900px, 0, 0);
-    transform: translate(0);
-  }
-  30% {
-    clip: rect(10px, 900px, 40px, 0); /* Leggero smottamento del glitch */
-    transform: translate(-1px, -1px); /* Movimento minimo */
-  }
-  60% {
-    clip: rect(20px, 900px, 60px, 0); /* Leggero smottamento del glitch */
-    transform: translate(1px, 1px); /* Movimento minimo */
-  }
+  0%, 100% { clip: rect(0, 900px, 0, 0); transform: translate(0); }
+  30% { clip: rect(10px, 900px, 40px, 0); transform: translate(-1px, -1px); }
+  60% { clip: rect(20px, 900px, 60px, 0); transform: translate(1px, 1px); }
 }
 
 @keyframes subtle-glitch-after {
-  0%, 100% {
-    clip: rect(0, 900px, 0, 0);
-    transform: translate(0);
-  }
-  30% {
-    clip: rect(15px, 900px, 50px, 0); /* Piccolo spostamento */
-    transform: translate(1px, -1px); /* Movimento molto piccolo */
-  }
-  60% {
-    clip: rect(25px, 900px, 70px, 0); /* Piccolo spostamento */
-    transform: translate(-1px, 1px); /* Movimento molto piccolo */
-  }
+  0%, 100% { clip: rect(0, 900px, 0, 0); transform: translate(0); }
+  30% { clip: rect(15px, 900px, 50px, 0); transform: translate(1px, -1px); }
+  60% { clip: rect(25px, 900px, 70px, 0); transform: translate(-1px, 1px); }
 }
 
+/* Stili generici P-3 (mantenuti per compatibilità) */
 .p-3 {
   background-color: #f2f2f2;
   border-radius: 8px;
   text-align: center;
   transition: background-color 2s, color 2s;
-  /* AGGIUNTA PER ALLINEAMENTO */
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1; /* Fa occupare tutto lo spazio verticale disponibile */
 }
 
 .description-one {
@@ -277,282 +229,130 @@ h3 {
   text-align: justify;
 }
 
-.education-container {
+/* Education Icons */
+.education-container, .skills-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* In caso di overflow, le icone andranno su una nuova riga */
-  gap: 15px; /* Spazio tra le icone */
+  flex-wrap: wrap;
+  gap: 15px;
   padding: 10px;
 }
 
-.education-icon {
-  width: 500px; /* Dimensione delle icone */
-  height: auto; /* Mantiene le proporzioni */
-}
+.education-icon, .education-icon-two { width: 500px; height: auto; }
+.education-icon-three { width: 300px; height: auto; }
+.education-icon-four { width: 250px; height: auto; }
+.skill-icon { width: 100px; height: auto; }
 
-.education-icon-two {
-  width: 500px; /* Dimensione delle icone */
-  height: auto; /* Mantiene le proporzioni */
-}
-
-.education-icon-three {
-  width: 300px; /* Dimensione delle icone */
-  height: auto; /* Mantiene le proporzioni */
-}
-
-.education-icon-four {
-  width: 250px; /* Dimensione delle icone */
-  height: auto; /* Mantiene le proporzioni */
-}
-
-.skills-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; /* In caso di overflow, le icone andranno su una nuova riga */
-  gap: 15px; /* Spazio tra le icone */
-  padding: 10px;
-}
-
-.skill-icon {
-  width: 100px; /* Dimensione delle icone */
-  height: auto; /* Mantiene le proporzioni */
-}
-
-.icon-large {
-  font-size: 34px; /* Dimensioni icone maggiorate */
-}
-
-.description-large {
-  font-size: 1.20rem; /* Dimensioni testo maggiorate */
-}
+.icon-large { font-size: 34px; }
+.description-large { font-size: 1.20rem; }
 
 .p-3.socials {
   background-color: #F8F9FA;
   border-radius: 0;
 }
 
-/* Modalità scura */
-body.dark-mode {
-  background-color: #0F0F0F;
-  color: #0F0F0F;
-}
+/* --- DARK MODE --- */
+body.dark-mode { background-color: #0F0F0F; color: #0F0F0F; }
+body.dark-mode .header-title { color: #F8F9FA; }
+body.dark-mode .navbar { background-color: #423F3E !important; }
+body.dark-mode .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28248, 249, 250, 29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
+body.dark-mode .fa-moon, body.dark-mode .fa-sun { color: #F8F9FA; }
+body.dark-mode .socials { background-color: #423F3E; }
+body.dark-mode .navbar-nav .nav-link { color: #F8F9FA; }
+body.dark-mode .navbar-nav .nav-link:hover, body.dark-mode .navbar-nav .nav-link:focus { color: #7E2553; }
+body.dark-mode .btn-floating { color: #F8F9FA; }
+body.dark-mode .btn-light { background-color: #7E2553; color: #F8F9FA; }
+body.dark-mode .section-divider { background-color: #7E2553; }
+body.dark-mode .p-3 { background-color: #423F3E; }
+body.dark-mode .card { background-color: #423F3E; color: #F8F9FA; box-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+body.dark-mode footer { color: #F8F9FA; transition: background-color 2s, color 2s; }
 
-body.dark-mode .header-title{
-  color: #F8F9FA;
-}
-body.dark-mode .navbar {
-  background-color: #423F3E !important;
-}
-
-body.dark-mode .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28248, 249, 250, 29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
-
-body.dark-mode .fa-moon {
-  color:#F8F9FA;
-}
-
-body.dark-mode .fa-sun {
-  color:#F8F9FA;
-}
-
-body.dark-mode .socials {
-  background-color: #423F3E;
-}
-
-
-body.dark-mode .navbar-nav .nav-link {
-  color: #F8F9FA; /* Colore del testo della navbar in modalità scura */
-}
-
-body.dark-mode .navbar-nav .nav-link:hover,
-body.dark-mode .navbar-nav .nav-link:focus {
-color: #7E2553; /* Colore quando il link è in hover o in focus */
-}
-
-body.dark-mode .btn-floating {
-  display: inline-flex; /* Cambia display a inline-flex */
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra orizzontalmente */
-  width: 35px; /* Dimensione fissa del pulsante */
-  height: 35px; /* Dimensione fissa del pulsante */
-  padding: 0; /* Rimuove padding extra */
-  font-size: 15px; /* Puoi regolare la dimensione del simbolo */
-  border-radius: 50%; /* Mantiene il bottone rotondo */
-  transition: background-color 0.3s ease; /* Transizione per l'hover */
-  color: #F8F9FA;
-
-}
-
-body.dark-mode .btn-light {
-  background-color: #7E2553;
-  color: #F8F9FA;
-}
-
-body.dark-mode .section-divider {
-  background-color: #7E2553;
-}
-
-body.dark-mode .p-3 {
-  background-color: #423F3E; /* Cambia colore di sfondo per elementi con classe .p-3 */
-}
-
-body.dark-mode .card {
-  background-color: #423F3E; /* Cambia colore di sfondo per tutte le card in modalità scura */
-  color: #F8F9FA; /* Cambia colore del testo all'interno della card */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Cambia l'ombra per adattarsi alla modalità scura */
-}
-
-#theme-toggler .fa-sun {
-  display: none;
-}
-
-body.dark-mode #theme-toggler .fa-sun {
-  display: inline;
-}
-
-#theme-toggler .fa-moon {
-  display: inline;
-}
-
-body.dark-mode #theme-toggler .fa-moon {
-  display: none;
-}
-
+/* Theme Toggler */
+#theme-toggler .fa-sun { display: none; }
+body.dark-mode #theme-toggler .fa-sun { display: inline; }
+#theme-toggler .fa-moon { display: inline; }
+body.dark-mode #theme-toggler .fa-moon { display: none; }
 #theme-toggler {
-  background: none; /* Rimuove lo sfondo */
-  border: none; /* Rimuove il bordo */
-  outline: none; /* Rimuove l'outline quando il pulsante è selezionato */
-  cursor: pointer; /* Cambia il cursore a una mano per indicare che è cliccabile */
-  padding: 0; /* Rimuove il padding predefinito */
-  font-size: 24px; /* Dimensione delle icone (puoi regolarla) */
-  color: inherit; /* Mantiene il colore del testo ereditato */
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 24px;
+  color: inherit;
 }
+#theme-toggler i { display: inline; }
 
-#theme-toggler i {
-  display: inline; /* Mostra le icone inline */
-}
-
-body.dark-mode footer {
-  color: #F8F9FA;
-  transition: background-color 2s, color 2s;
-}
-
+/* MEDIA QUERIES */
 @media (max-width: 375px) {
-  .navbar {
-    display: block; /* Cambia il display a block per un layout più semplice */
-    text-align: center; /* Centra il contenuto all'interno della navbar */
-  }
-
-  .navbar-brand {
-padding-left: 1rem;  
-  }
-  
-  .navbar-toggler {
-    margin: 0 auto; /* Imposta un margine automatico per centrare l'elemento */
-    position: relative;
-  }
+  .navbar { display: block; text-align: center; }
+  .navbar-brand { padding-left: 1rem; }
+  .navbar-toggler { margin: 0 auto; position: relative; }
 }
 
-
-
-/* Media Queries per dispositivi mobili e schermi di piccole dimensioni */
 @media (max-width: 576px) {
-  .navbar-brand {
-    font-size: 1rem; /* Riduce la dimensione del testo per piccoli schermi */
-  }
-
-  .navbar-toggler {
-    right: 0.25rem; /* Sposta il pulsante a destra per i piccoli schermi */
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 1rem; /* Riduce la dimensione del testo dei link */
-  }
-
-  .glitch-text {
-    font-size: 1.1rem; /* Riduce la dimensione del testo per piccoli schermi */
-  }
-  
-  .education-container {
-    gap: 10px; /* Riduce lo spazio tra le icone */
-  }
-
-  .education-icon, .education-icon-two, .education-icon-three, .education-icon-four {
-    width: 120px; /* Riduce la dimensione delle icone per piccoli schermi */
-  }
-
-  .skills-container {
-    gap: 10px; /* Riduce lo spazio tra le icone */
-  }
-
-  .skill-icon {
-    width: 80px; /* Riduce la dimensione delle icone per piccoli schermi */
-  }
+  .navbar-brand, .navbar-nav .nav-link { font-size: 1rem; }
+  .navbar-toggler { right: 0.25rem; }
+  .glitch-text { font-size: 1.1rem; }
+  .education-container, .skills-container { gap: 10px; }
+  .education-icon, .education-icon-two, .education-icon-three, .education-icon-four { width: 120px; }
+  .skill-icon { width: 80px; }
 }
 
-/* Media Queries per tablet e schermi di medie dimensioni */
 @media (min-width: 577px) and (max-width: 768px) {
-  .navbar-brand {
-    font-size: 1.1rem; /* Dimensione del testo per tablet e schermi medi */
-  }
-
-  .navbar-toggler {
-    right: 0.5rem; /* Mantiene il pulsante a destra per schermi medi */
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 1.1rem; /* Dimensione del testo dei link */
-  }
-
-  .glitch-text {
-    font-size: 1.2rem; /* Dimensione del testo per schermi medi */
-  }
+  .navbar-brand, .navbar-nav .nav-link { font-size: 1.1rem; }
+  .navbar-toggler { right: 0.5rem; }
+  .glitch-text { font-size: 1.2rem; }
 }
 
-/*posizionamento foto about me e container su schermi piccoli*/
 @media (max-width: 768px) {
-  .card {
-    flex-direction: column; /* Dispone gli elementi in colonna */
-    text-align: center; /* Centra il testo e l'immagine */
-  }
-
-  .img-container {
-    order: -1; /* Posiziona l'immagine sopra il testo */
-    margin: auto auto; /* Centra l'immagine con margine sotto */
-    margin-top: 1rem;
-  }
-
-  .img-about-me {
-    width: 150px; /* Riduce la dimensione dell'immagine */
-    margin: 0 auto; /* Centra l'immagine */
-  }
-
-  h3 {
-    padding: 0;
-  }
+  .card { flex-direction: column; text-align: center; }
+  .img-container { order: -1; margin: auto auto; margin-top: 1rem; }
+  .img-about-me { width: 150px; margin: 0 auto; }
+  h3 { padding: 0; }
 }
 
-/* --- NUOVE AGGIUNTE PER ALLINEAMENTO CAROSELLI --- */
+/* --- FIX LAYOUT CAROSELLI --- */
 
-/* Forza le immagini dei caroselli ad avere la stessa altezza */
+/* 1. Forza le immagini ad altezza identica */
 .carousel-item img {
-    height: 300px; /* Altezza fissa */
-    object-fit: cover; /* Ritaglia l'immagine senza deformarla */
+    height: 300px;
+    object-fit: cover; 
     object-position: top center;
 }
 
-/* Assicura che la colonna del carosello si comporti come un contenitore flex verticale */
+/* 2. Regola specifica per il box di descrizione (sostituisce il generico p-3 per il layout) */
+/* Questa classe va aggiunta al div grigio nell'HTML */
+.project-box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Occupa tutto lo spazio rimanente */
+    justify-content: space-between; /* Spinge il contenuto agli estremi */
+    
+    /* Mantiene lo stile del p-3 originale */
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 2s, color 2s;
+    padding: 1rem !important; /* Forza il padding */
+    margin-top: 1rem;
+}
+
+/* In Dark Mode, il box deve cambiare colore */
+body.dark-mode .project-box {
+    background-color: #423F3E;
+}
+
+/* 3. Forza il pulsante a stare in basso e centrato */
+.project-box .btn {
+    margin-top: auto; /* Spinge verso il basso */
+    align-self: center; /* Centra orizzontalmente */
+}
+
+/* 4. Assicura che la colonna Bootstrap sia un contenitore Flex verticale */
 .carousel-col {
     display: flex;
     flex-direction: column;
-}
-
-/* Il pulsante all'interno del box p-3 */
-/* Utilizza mt-auto inline nell'HTML, ma qui possiamo assicurarci che non abbia margini strani */
-.p-3 .btn {
-    margin-top: auto; /* Se supportato dal contesto flex padre */
-    align-self: center; /* Centra il pulsante orizzontalmente */
+    height: 100%; /* Altezza piena rispetto alla riga */
 }
