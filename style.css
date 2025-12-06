@@ -266,6 +266,10 @@ h3 {
   border-radius: 8px;
   text-align: center;
   transition: background-color 2s, color 2s;
+  /* AGGIUNTA PER ALLINEAMENTO */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Fa occupare tutto lo spazio verticale disponibile */
 }
 
 .description-one {
@@ -529,4 +533,26 @@ padding-left: 1rem;
   h3 {
     padding: 0;
   }
+}
+
+/* --- NUOVE AGGIUNTE PER ALLINEAMENTO CAROSELLI --- */
+
+/* Forza le immagini dei caroselli ad avere la stessa altezza */
+.carousel-item img {
+    height: 300px; /* Altezza fissa */
+    object-fit: cover; /* Ritaglia l'immagine senza deformarla */
+    object-position: top center;
+}
+
+/* Assicura che la colonna del carosello si comporti come un contenitore flex verticale */
+.carousel-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Il pulsante all'interno del box p-3 */
+/* Utilizza mt-auto inline nell'HTML, ma qui possiamo assicurarci che non abbia margini strani */
+.p-3 .btn {
+    margin-top: auto; /* Se supportato dal contesto flex padre */
+    align-self: center; /* Centra il pulsante orizzontalmente */
 }

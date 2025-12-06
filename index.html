@@ -85,23 +85,6 @@
     />
 
     <title>Portfolio</title>
-    
-    <style>
-        /* Forza le immagini dei caroselli ad avere la stessa altezza */
-        .carousel-item img {
-            height: 300px; /* Puoi modificare questo valore se vuoi le immagini più alte o basse */
-            object-fit: cover; /* Ritaglia l'immagine per riempire lo spazio senza deformarla */
-            object-position: top center;
-        }
-
-        /* Stile per i box grigi delle descrizioni */
-        .gray-box {
-            background-color: #f8f9fa; /* Grigio chiaro Bootstrap */
-            border-radius: 8px; /* Bordi arrotondati */
-            border: 1px solid #e9ecef; /* Leggero bordo opzionale */
-        }
-    </style>
-
   </head>
 
   <body class="d-flex flex-column h-100" oncontextmenu="return false">
@@ -251,7 +234,9 @@ I am well aware that mastering even one of the languages mentioned above require
               <h3 class="mt-5" id="portfolio">Portfolio</h3>
               <div class="section-divider"></div>
               
-              <div class="row d-flex align-items-stretch"> <div class="col-md-6 mb-4 d-flex flex-column" style="padding-left: 20px; padding-right: 20px">
+              <div class="row d-flex align-items-stretch"> 
+                
+                <div class="col-md-6 mb-4 carousel-col" style="padding-left: 20px; padding-right: 20px">
                   
                   <div
                     id="carouselExampleAutoplaying1"
@@ -291,7 +276,7 @@ I am well aware that mastering even one of the languages mentioned above require
                     </button>
                   </div>
 
-                  <div class="container-fluid p-3 mt-3 d-flex flex-column flex-grow-1 gray-box">
+                  <div class="container-fluid p-3 mt-3">
                     <h5>SgamApp</h5>
                     <p class="description-one">
                       In November 2025, we were finalists at the ITS 4.0 event at the Verona Exhibition Centre. 
@@ -304,9 +289,9 @@ I am well aware that mastering even one of the languages mentioned above require
                       worked on developing the Sgamy chatbot, which identifies any potentially risky messages or 
                       notifications in real time.
                     </p>
-                    <a href="https://sgamapp.vercel.app" class="btn btn-light mt-auto align-self-start" target="_blank">Visit Website</a>
+                    <a href="https://sgamapp.vercel.app" class="btn btn-light mt-auto align-self-center" target="_blank">Visit Website</a>
                   </div>
-                </div> <div class="col-md-6 mb-4 d-flex flex-column" style="padding-left: 20px; padding-right: 20px">
+                </div> <div class="col-md-6 mb-4 carousel-col" style="padding-left: 20px; padding-right: 20px">
                   
                   <div
                     id="carouselExampleAutoplaying2"
@@ -355,7 +340,7 @@ I am well aware that mastering even one of the languages mentioned above require
                     </button>
                   </div>
 
-                  <div class="container-fluid p-3 mt-3 d-flex flex-column flex-grow-1 gray-box">
+                  <div class="container-fluid p-3 mt-3">
                     <h5>App - My First Pc</h5>
                     <p class="description-one">
                       This application is a complete solution for both server
@@ -370,13 +355,13 @@ I am well aware that mastering even one of the languages mentioned above require
                       and trends. Developed with Java, SpringBoot, Bootstrap,
                       Thymeleaf, and MySQL.
                     </p>
-                    <a href="https://github.com/francisgrain/App-My-firts-Pc" class="btn btn-light mt-auto align-self-start" target="_blank">View Code</a>
+                    <a href="https://github.com/francisgrain/App-My-firts-Pc" class="btn btn-light mt-auto align-self-center" target="_blank">View Code</a>
                   </div>
                 </div> </div> <br class="d-none d-md-block" />
 
               <div class="row d-flex align-items-stretch">
 
-                <div class="col-md-6 mb-4 d-flex flex-column" style="padding-left: 20px; padding-right: 20px">
+                <div class="col-md-6 mb-4 carousel-col" style="padding-left: 20px; padding-right: 20px">
                   
                   <div
                     id="carouselExampleAutoplaying3"
@@ -410,7 +395,7 @@ I am well aware that mastering even one of the languages mentioned above require
                     </button>
                   </div>
 
-                  <div class="container-fluid p-3 mt-3 d-flex flex-column flex-grow-1 gray-box">
+                  <div class="container-fluid p-3 mt-3">
                     <h5>App - Movies</h5>
                     <p class="description-one">
                       This is a funny application designed for movie
@@ -425,9 +410,9 @@ I am well aware that mastering even one of the languages mentioned above require
                       safeguarded. Developed using Java, SpringBoot, Bootstrap,
                       Thymeleaf, Postman, and MySQL.
                     </p>
-                    <a href="https://github.com/francisgrain/App-Movies" class="btn btn-light mt-auto align-self-start" target="_blank">View Code</a>
+                    <a href="https://github.com/francisgrain/App-Movies" class="btn btn-light mt-auto align-self-center" target="_blank">View Code</a>
                   </div>
-                </div> <div class="col-md-6 mb-4 d-flex flex-column" style="padding-left: 20px; padding-right: 20px">
+                </div> <div class="col-md-6 mb-4 carousel-col" style="padding-left: 20px; padding-right: 20px">
                   
                   <div
                     id="carouselExampleAutoplaying4"
@@ -473,7 +458,7 @@ I am well aware that mastering even one of the languages mentioned above require
                     </button>
                   </div>
 
-                  <div class="container-fluid p-3 mt-3 d-flex flex-column flex-grow-1 gray-box">
+                  <div class="container-fluid p-3 mt-3">
                     <h5>App - Animal House</h5>
                     <p class="description-one">
                       This application is a complete solution for both server
@@ -492,7 +477,7 @@ I am well aware that mastering even one of the languages mentioned above require
                       data are safeguarded. Developed with Python, Flask and
                       MySQL.
                     </p>
-                    <a href="https://github.com/francisgrain/App-Animal-House" class="btn btn-light mt-auto align-self-start" target="_blank">View Code</a>
+                    <a href="https://github.com/francisgrain/App-Animal-House" class="btn btn-light mt-auto align-self-center" target="_blank">View Code</a>
                   </div>
                 </div> </div> </div>
           </div>
