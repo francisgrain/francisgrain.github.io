@@ -18,7 +18,6 @@ body {
 .navbar {
   background-color: #F8F9FA;
   transition: background-color 2s, color 2s;
-
 }
 
 .navbar-toggler-icon {
@@ -28,7 +27,6 @@ body {
 .socials {
   background-color: #F8F9FA;
   transition: background-color 2s, color 2s;
-
 }
 
 .navbar-brand {
@@ -103,7 +101,6 @@ h3 {
   padding: 0 30px;
   text-align: justify;
   transition: background-color 2s, color 2s;
-
 }
 
 .lead, h3 {
@@ -168,24 +165,12 @@ h3 {
 }
 
 @keyframes glitch {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(10px, -3px);
-  }
-  40% {
-    transform: translate(-8px, 4px);
-  }
-  60% {
-    transform: translate(5px, 10px);
-  }
-  80% {
-    transform: translate(-10px, -5px);
-  }
-  100% {
-    transform: translate(0);
-  }
+  0% { transform: translate(0); }
+  20% { transform: translate(10px, -3px); }
+  40% { transform: translate(-8px, 4px); }
+  60% { transform: translate(5px, 10px); }
+  80% { transform: translate(-10px, -5px); }
+  100% { transform: translate(0); }
 }
 
 .glitch-text {
@@ -220,45 +205,21 @@ h3 {
 }
 
 @keyframes subtle-glitch {
-  0%, 100% {
-    transform: translate(0);
-  }
-  30% {
-    transform: translate(1px, 1px); /* Movimento molto piccolo */
-  }
-  60% {
-    transform: translate(-1px, -1px); /* Movimento molto piccolo */
-  }
+  0%, 100% { transform: translate(0); }
+  30% { transform: translate(1px, 1px); /* Movimento molto piccolo */ }
+  60% { transform: translate(-1px, -1px); /* Movimento molto piccolo */ }
 }
 
 @keyframes subtle-glitch-before {
-  0%, 100% {
-    clip: rect(0, 900px, 0, 0);
-    transform: translate(0);
-  }
-  30% {
-    clip: rect(10px, 900px, 40px, 0); /* Leggero smottamento del glitch */
-    transform: translate(-1px, -1px); /* Movimento minimo */
-  }
-  60% {
-    clip: rect(20px, 900px, 60px, 0); /* Leggero smottamento del glitch */
-    transform: translate(1px, 1px); /* Movimento minimo */
-  }
+  0%, 100% { clip: rect(0, 900px, 0, 0); transform: translate(0); }
+  30% { clip: rect(10px, 900px, 40px, 0); transform: translate(-1px, -1px); }
+  60% { clip: rect(20px, 900px, 60px, 0); transform: translate(1px, 1px); }
 }
 
 @keyframes subtle-glitch-after {
-  0%, 100% {
-    clip: rect(0, 900px, 0, 0);
-    transform: translate(0);
-  }
-  30% {
-    clip: rect(15px, 900px, 50px, 0); /* Piccolo spostamento */
-    transform: translate(1px, -1px); /* Movimento molto piccolo */
-  }
-  60% {
-    clip: rect(25px, 900px, 70px, 0); /* Piccolo spostamento */
-    transform: translate(-1px, 1px); /* Movimento molto piccolo */
-  }
+  0%, 100% { clip: rect(0, 900px, 0, 0); transform: translate(0); }
+  30% { clip: rect(15px, 900px, 50px, 0); transform: translate(1px, -1px); }
+  60% { clip: rect(25px, 900px, 70px, 0); transform: translate(-1px, 1px); }
 }
 
 .p-3 {
@@ -286,25 +247,10 @@ h3 {
   padding: 10px;
 }
 
-.education-icon {
-  width: 500px; /* Dimensione delle icone */
-  height: auto; /* Mantiene le proporzioni */
-}
-
-.education-icon-two {
-  width: 500px; /* Dimensione delle icone */
-  height: auto; /* Mantiene le proporzioni */
-}
-
-.education-icon-three {
-  width: 300px; /* Dimensione delle icone */
-  height: auto; /* Mantiene le proporzioni */
-}
-
-.education-icon-four {
-  width: 250px; /* Dimensione delle icone */
-  height: auto; /* Mantiene le proporzioni */
-}
+.education-icon { width: 500px; height: auto; }
+.education-icon-two { width: 500px; height: auto; }
+.education-icon-three { width: 300px; height: auto; }
+.education-icon-four { width: 250px; height: auto; }
 
 .skills-container {
   display: flex;
@@ -315,22 +261,18 @@ h3 {
   padding: 10px;
 }
 
-.skill-icon {
-  width: 100px; /* Dimensione delle icone */
-  height: auto; /* Mantiene le proporzioni */
-}
+.skill-icon { width: 100px; height: auto; }
+.icon-large { font-size: 34px; }
+.description-large { font-size: 1.20rem; }
 
-.icon-large {
-  font-size: 34px; /* Dimensioni icone maggiorate */
-}
-
-.description-large {
-  font-size: 1.20rem; /* Dimensioni testo maggiorate */
-}
-
+/* FIX FOOTER SOCIALS */
 .p-3.socials {
   background-color: #F8F9FA;
   border-radius: 0;
+  /* Override delle impostazioni .p-3 per il footer */
+  flex-direction: row !important; /* Forza orizzontale */
+  justify-content: center; /* Centra orizzontalmente */
+  gap: 15px; /* Spazio tra le icone */
 }
 
 /* Modalità scura */
@@ -339,38 +281,15 @@ body.dark-mode {
   color: #0F0F0F;
 }
 
-body.dark-mode .header-title{
-  color: #F8F9FA;
-}
-body.dark-mode .navbar {
-  background-color: #423F3E !important;
-}
-
-body.dark-mode .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28248, 249, 250, 29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
-
-body.dark-mode .fa-moon {
-  color:#F8F9FA;
-}
-
-body.dark-mode .fa-sun {
-  color:#F8F9FA;
-}
-
-body.dark-mode .socials {
-  background-color: #423F3E;
-}
-
-
-body.dark-mode .navbar-nav .nav-link {
-  color: #F8F9FA; /* Colore del testo della navbar in modalità scura */
-}
-
+body.dark-mode .header-title{ color: #F8F9FA; }
+body.dark-mode .navbar { background-color: #423F3E !important; }
+body.dark-mode .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28248, 249, 250, 29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
+body.dark-mode .fa-moon { color:#F8F9FA; }
+body.dark-mode .fa-sun { color:#F8F9FA; }
+body.dark-mode .socials { background-color: #423F3E; }
+body.dark-mode .navbar-nav .nav-link { color: #F8F9FA; }
 body.dark-mode .navbar-nav .nav-link:hover,
-body.dark-mode .navbar-nav .nav-link:focus {
-color: #7E2553; /* Colore quando il link è in hover o in focus */
-}
+body.dark-mode .navbar-nav .nav-link:focus { color: #7E2553; }
 
 body.dark-mode .btn-floating {
   display: inline-flex; /* Cambia display a inline-flex */
@@ -383,7 +302,6 @@ body.dark-mode .btn-floating {
   border-radius: 50%; /* Mantiene il bottone rotondo */
   transition: background-color 0.3s ease; /* Transizione per l'hover */
   color: #F8F9FA;
-
 }
 
 body.dark-mode .btn-light {
@@ -391,49 +309,30 @@ body.dark-mode .btn-light {
   color: #F8F9FA;
 }
 
-body.dark-mode .section-divider {
-  background-color: #7E2553;
-}
-
-body.dark-mode .p-3 {
-  background-color: #423F3E; /* Cambia colore di sfondo per elementi con classe .p-3 */
-}
-
+body.dark-mode .section-divider { background-color: #7E2553; }
+body.dark-mode .p-3 { background-color: #423F3E; }
 body.dark-mode .card {
-  background-color: #423F3E; /* Cambia colore di sfondo per tutte le card in modalità scura */
-  color: #F8F9FA; /* Cambia colore del testo all'interno della card */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Cambia l'ombra per adattarsi alla modalità scura */
+  background-color: #423F3E;
+  color: #F8F9FA;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-#theme-toggler .fa-sun {
-  display: none;
-}
-
-body.dark-mode #theme-toggler .fa-sun {
-  display: inline;
-}
-
-#theme-toggler .fa-moon {
-  display: inline;
-}
-
-body.dark-mode #theme-toggler .fa-moon {
-  display: none;
-}
+#theme-toggler .fa-sun { display: none; }
+body.dark-mode #theme-toggler .fa-sun { display: inline; }
+#theme-toggler .fa-moon { display: inline; }
+body.dark-mode #theme-toggler .fa-moon { display: none; }
 
 #theme-toggler {
-  background: none; /* Rimuove lo sfondo */
-  border: none; /* Rimuove il bordo */
-  outline: none; /* Rimuove l'outline quando il pulsante è selezionato */
-  cursor: pointer; /* Cambia il cursore a una mano per indicare che è cliccabile */
-  padding: 0; /* Rimuove il padding predefinito */
-  font-size: 24px; /* Dimensione delle icone (puoi regolarla) */
-  color: inherit; /* Mantiene il colore del testo ereditato */
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 24px;
+  color: inherit;
 }
 
-#theme-toggler i {
-  display: inline; /* Mostra le icone inline */
-}
+#theme-toggler i { display: inline; }
 
 body.dark-mode footer {
   color: #F8F9FA;
@@ -441,98 +340,37 @@ body.dark-mode footer {
 }
 
 @media (max-width: 375px) {
-  .navbar {
-    display: block; /* Cambia il display a block per un layout più semplice */
-    text-align: center; /* Centra il contenuto all'interno della navbar */
-  }
-
-  .navbar-brand {
-padding-left: 1rem;  
-  }
-  
-  .navbar-toggler {
-    margin: 0 auto; /* Imposta un margine automatico per centrare l'elemento */
-    position: relative;
-  }
+  .navbar { display: block; text-align: center; }
+  .navbar-brand { padding-left: 1rem; }
+  .navbar-toggler { margin: 0 auto; position: relative; }
 }
-
-
 
 /* Media Queries per dispositivi mobili e schermi di piccole dimensioni */
 @media (max-width: 576px) {
-  .navbar-brand {
-    font-size: 1rem; /* Riduce la dimensione del testo per piccoli schermi */
-  }
-
-  .navbar-toggler {
-    right: 0.25rem; /* Sposta il pulsante a destra per i piccoli schermi */
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 1rem; /* Riduce la dimensione del testo dei link */
-  }
-
-  .glitch-text {
-    font-size: 1.1rem; /* Riduce la dimensione del testo per piccoli schermi */
-  }
-  
-  .education-container {
-    gap: 10px; /* Riduce lo spazio tra le icone */
-  }
-
-  .education-icon, .education-icon-two, .education-icon-three, .education-icon-four {
-    width: 120px; /* Riduce la dimensione delle icone per piccoli schermi */
-  }
-
-  .skills-container {
-    gap: 10px; /* Riduce lo spazio tra le icone */
-  }
-
-  .skill-icon {
-    width: 80px; /* Riduce la dimensione delle icone per piccoli schermi */
-  }
+  .navbar-brand { font-size: 1rem; }
+  .navbar-toggler { right: 0.25rem; }
+  .navbar-nav .nav-link { font-size: 1rem; }
+  .glitch-text { font-size: 1.1rem; }
+  .education-container { gap: 10px; }
+  .education-icon, .education-icon-two, .education-icon-three, .education-icon-four { width: 120px; }
+  .skills-container { gap: 10px; }
+  .skill-icon { width: 80px; }
 }
 
 /* Media Queries per tablet e schermi di medie dimensioni */
 @media (min-width: 577px) and (max-width: 768px) {
-  .navbar-brand {
-    font-size: 1.1rem; /* Dimensione del testo per tablet e schermi medi */
-  }
-
-  .navbar-toggler {
-    right: 0.5rem; /* Mantiene il pulsante a destra per schermi medi */
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 1.1rem; /* Dimensione del testo dei link */
-  }
-
-  .glitch-text {
-    font-size: 1.2rem; /* Dimensione del testo per schermi medi */
-  }
+  .navbar-brand { font-size: 1.1rem; }
+  .navbar-toggler { right: 0.5rem; }
+  .navbar-nav .nav-link { font-size: 1.1rem; }
+  .glitch-text { font-size: 1.2rem; }
 }
 
 /*posizionamento foto about me e container su schermi piccoli*/
 @media (max-width: 768px) {
-  .card {
-    flex-direction: column; /* Dispone gli elementi in colonna */
-    text-align: center; /* Centra il testo e l'immagine */
-  }
-
-  .img-container {
-    order: -1; /* Posiziona l'immagine sopra il testo */
-    margin: auto auto; /* Centra l'immagine con margine sotto */
-    margin-top: 1rem;
-  }
-
-  .img-about-me {
-    width: 150px; /* Riduce la dimensione dell'immagine */
-    margin: 0 auto; /* Centra l'immagine */
-  }
-
-  h3 {
-    padding: 0;
-  }
+  .card { flex-direction: column; text-align: center; }
+  .img-container { order: -1; margin: auto auto; margin-top: 1rem; }
+  .img-about-me { width: 150px; margin: 0 auto; }
+  h3 { padding: 0; }
 }
 
 /* --- NUOVE AGGIUNTE PER ALLINEAMENTO CAROSELLI --- */
@@ -551,7 +389,6 @@ padding-left: 1rem;
 }
 
 /* Il pulsante all'interno del box p-3 */
-/* Utilizza mt-auto inline nell'HTML, ma qui possiamo assicurarci che non abbia margini strani */
 .p-3 .btn {
     margin-top: auto; /* Se supportato dal contesto flex padre */
     align-self: center; /* Centra il pulsante orizzontalmente */
