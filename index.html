@@ -14,52 +14,32 @@
         privacyUrl: "" /* Privacy policy url */,
         bodyPosition:
           "bottom" /* or top to bring it as first element for accessibility */,
-
         hashtag: "#tarteaucitron" /* Open the panel with this hashtag */,
         cookieName: "tarteaucitron" /* Cookie name */,
-
         orientation: "middle" /* Banner position (top - bottom) */,
-
         groupServices: false /* Group services by category */,
         showDetailsOnClick: true /* Click to expand the description */,
         serviceDefaultState: "wait" /* Default state (true - wait - false) */,
-
         showAlertSmall: false /* Show the small banner on bottom right */,
         cookieslist: false /* Show the cookie list */,
-
         closePopup: false /* Show a close X on the banner */,
-
         showIcon: true /* Show cookie icon to manage cookies */,
-        //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
         iconPosition:
           "BottomRight" /* BottomRight, BottomLeft, TopRight and TopLeft */,
-
         adblocker: false /* Show a Warning if an adblocker is detected */,
-
         DenyAllCta: true /* Show the deny all button */,
         AcceptAllCta: true /* Show the accept all button when highPrivacy on */,
         highPrivacy: true /* HIGHLY RECOMMANDED Disable auto consent */,
         alwaysNeedConsent: false /* Ask the consent for "Privacy by design" services */,
-
         handleBrowserDNTRequest: false /* If Do Not Track == 1, disallow all */,
-
         removeCredit: false /* Remove credit link */,
         moreInfoLink: true /* Show more info link */,
-
         useExternalCss: false /* If false, the tarteaucitron.css file will be loaded */,
         useExternalJs: false /* If false, the tarteaucitron.js file will be loaded */,
-
-        //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
-
         readmoreLink: "" /* Change the default readmore link */,
-
         mandatory: true /* Show a message about mandatory cookies */,
         mandatoryCta: true /* Show the disabled accept button when mandatory on */,
-
-        //"customCloserId": "", /* Optional a11y: Custom element ID used to open the panel */
-
         googleConsentMode: true /* Enable Google Consent Mode v2 for Google ads and GA4 */,
-
         partnersList: false /* Show the number of partners on the popup/middle banner */,
       });
     </script>
@@ -105,6 +85,23 @@
     />
 
     <title>Portfolio</title>
+    
+    <style>
+        /* Forza le immagini dei caroselli ad avere la stessa altezza */
+        .carousel-item img {
+            height: 300px; /* Puoi modificare questo valore se vuoi le immagini più alte o basse */
+            object-fit: cover; /* Ritaglia l'immagine per riempire lo spazio senza deformarla */
+            object-position: top center;
+        }
+
+        /* Stile per i box grigi delle descrizioni */
+        .gray-box {
+            background-color: #f8f9fa; /* Grigio chiaro Bootstrap */
+            border-radius: 8px; /* Bordi arrotondati */
+            border: 1px solid #e9ecef; /* Leggero bordo opzionale */
+        }
+    </style>
+
   </head>
 
   <body class="d-flex flex-column h-100" oncontextmenu="return false">
@@ -254,11 +251,8 @@ I am well aware that mastering even one of the languages mentioned above require
               <h3 class="mt-5" id="portfolio">Portfolio</h3>
               <div class="section-divider"></div>
               
-              <div class="row">
-                <div
-                  class="col-md-6 mb-4"
-                  style="padding-left: 20px; padding-right: 20px"
-                >
+              <div class="row d-flex align-items-stretch"> <div class="col-md-6 mb-4 d-flex flex-column" style="padding-left: 20px; padding-right: 20px">
+                  
                   <div
                     id="carouselExampleAutoplaying1"
                     class="carousel carousel-dark slide"
@@ -266,81 +260,38 @@ I am well aware that mastering even one of the languages mentioned above require
                   >
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img
-                          src="/assets/images/sgamapp1.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/sgamapp1.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="/assets/images/sgamapp2.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/sgamapp2.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="/assets/images/sgamapp3.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/sgamapp3.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="/assets/images/sgamapp4.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/sgamapp4.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="/assets/images/sgamapp5.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/sgamapp5.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="/assets/images/sgamapp6.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/sgamapp6.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="/assets/images/sgamapp7.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />                      
+                        <img src="/assets/images/sgamapp7.png" class="d-block w-100 img-fluid" alt="..." />                      
+                      </div>
                     </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#carouselExampleAutoplaying1"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#carouselExampleAutoplaying1"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
 
-                  <div class="container-fluid p-3 mt-3">
+                  <div class="container-fluid p-3 mt-3 d-flex flex-column flex-grow-1 gray-box">
                     <h5>SgamApp</h5>
                     <p class="description-one">
                       In November 2025, we were finalists at the ITS 4.0 event at the Verona Exhibition Centre. 
@@ -353,18 +304,10 @@ I am well aware that mastering even one of the languages mentioned above require
                       worked on developing the Sgamy chatbot, which identifies any potentially risky messages or 
                       notifications in real time.
                     </p>
-                    <a
-                      href="https://sgamapp.vercel.app"
-                      class="btn btn-light"
-                      target="_blank"
-                      >Visit Website</a
-                    >
+                    <a href="https://sgamapp.vercel.app" class="btn btn-light mt-auto align-self-start" target="_blank">Visit Website</a>
                   </div>
-                </div>
-                </div> <div
-                  class="col-md-6 mb-4"
-                  style="padding-left: 20px; padding-right: 20px"
-                >
+                </div> <div class="col-md-6 mb-4 d-flex flex-column" style="padding-left: 20px; padding-right: 20px">
+                  
                   <div
                     id="carouselExampleAutoplaying2"
                     class="carousel carousel-dark slide"
@@ -372,103 +315,47 @@ I am well aware that mastering even one of the languages mentioned above require
                   >
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img
-                          src="/assets/images/myfirstpc1.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/myfirstpc1.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="/assets/images/myfirstpc2.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/myfirstpc2.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="/assets/images/myfirstpc3.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/myfirstpc3.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="/assets/images/myfirstpc4.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/myfirstpc4.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="/assets/images/myfirstpc5.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/myfirstpc5.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="/assets/images/myfirstpc6.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/myfirstpc6.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="/assets/images/myfirstpc7.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/myfirstpc7.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="/assets/images/myfirstpc8.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/myfirstpc8.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="/assets/images/myfirstpc9.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/myfirstpc9.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="/assets/images/myfirstpc10.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="/assets/images/myfirstpc10.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                     </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#carouselExampleAutoplaying2"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#carouselExampleAutoplaying2"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
 
-                  <div class="container-fluid p-3 mt-3">
+                  <div class="container-fluid p-3 mt-3 d-flex flex-column flex-grow-1 gray-box">
                     <h5>App - My First Pc</h5>
                     <p class="description-one">
                       This application is a complete solution for both server
@@ -483,21 +370,14 @@ I am well aware that mastering even one of the languages mentioned above require
                       and trends. Developed with Java, SpringBoot, Bootstrap,
                       Thymeleaf, and MySQL.
                     </p>
-                    <a
-                      href="https://github.com/francisgrain/App-My-firts-Pc"
-                      class="btn btn-light"
-                      target="_blank"
-                      >View Code</a
-                    >
+                    <a href="https://github.com/francisgrain/App-My-firts-Pc" class="btn btn-light mt-auto align-self-start" target="_blank">View Code</a>
                   </div>
                 </div> </div> <br class="d-none d-md-block" />
 
-              <div class="row">
+              <div class="row d-flex align-items-stretch">
 
-                <div
-                  class="col-md-6 mb-4"
-                  style="padding-left: 20px; padding-right: 20px"
-                >
+                <div class="col-md-6 mb-4 d-flex flex-column" style="padding-left: 20px; padding-right: 20px">
+                  
                   <div
                     id="carouselExampleAutoplaying3"
                     class="carousel carousel-dark slide"
@@ -505,68 +385,32 @@ I am well aware that mastering even one of the languages mentioned above require
                   >
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img
-                          src="assets/images/appmovies5.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="assets/images/appmovies5.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="assets/images/appmovies1.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="assets/images/appmovies1.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="assets/images/appmovies2.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="assets/images/appmovies2.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="assets/images/appmovies3.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="assets/images/appmovies3.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="assets/images/appmovies4.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="assets/images/appmovies4.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                     </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#carouselExampleAutoplaying3"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying3" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#carouselExampleAutoplaying3"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying3" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
 
-                  <div class="container-fluid p-3 mt-3">
+                  <div class="container-fluid p-3 mt-3 d-flex flex-column flex-grow-1 gray-box">
                     <h5>App - Movies</h5>
                     <p class="description-one">
                       This is a funny application designed for movie
@@ -581,17 +425,10 @@ I am well aware that mastering even one of the languages mentioned above require
                       safeguarded. Developed using Java, SpringBoot, Bootstrap,
                       Thymeleaf, Postman, and MySQL.
                     </p>
-                    <a
-                      href="https://github.com/francisgrain/App-Movies"
-                      class="btn btn-light"
-                      target="_blank"
-                      >View Code</a
-                    >
+                    <a href="https://github.com/francisgrain/App-Movies" class="btn btn-light mt-auto align-self-start" target="_blank">View Code</a>
                   </div>
-                </div> <div
-                  class="col-md-6 mb-4"
-                  style="padding-left: 20px; padding-right: 20px"
-                >
+                </div> <div class="col-md-6 mb-4 d-flex flex-column" style="padding-left: 20px; padding-right: 20px">
+                  
                   <div
                     id="carouselExampleAutoplaying4"
                     class="carousel carousel-dark slide"
@@ -599,96 +436,44 @@ I am well aware that mastering even one of the languages mentioned above require
                   >
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img
-                          src="assets/images/animalhouse1.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="assets/images/animalhouse1.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="assets/images/animalhouse2.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="assets/images/animalhouse2.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="assets/images/animalhouse3.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="assets/images/animalhouse3.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="assets/images/animalhouse4.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="assets/images/animalhouse4.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="assets/images/animalhouse5.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="assets/images/animalhouse5.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="assets/images/animalhouse6.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="assets/images/animalhouse6.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="assets/images/animalhouse7.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="assets/images/animalhouse7.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="assets/images/animalhouse8.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="assets/images/animalhouse8.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="assets/images/animalhouse9.png"
-                          class="d-block w-100 img-fluid"
-                          alt="..."
-                        />
+                        <img src="assets/images/animalhouse9.png" class="d-block w-100 img-fluid" alt="..." />
                       </div>
                     </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#carouselExampleAutoplaying4"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying4" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#carouselExampleAutoplaying4"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying4" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
 
-                  <div class="container-fluid p-3 mt-3">
+                  <div class="container-fluid p-3 mt-3 d-flex flex-column flex-grow-1 gray-box">
                     <h5>App - Animal House</h5>
                     <p class="description-one">
                       This application is a complete solution for both server
@@ -707,12 +492,7 @@ I am well aware that mastering even one of the languages mentioned above require
                       data are safeguarded. Developed with Python, Flask and
                       MySQL.
                     </p>
-                    <a
-                      href="https://github.com/francisgrain/App-Animal-House"
-                      class="btn btn-light"
-                      target="_blank"
-                      >View Code</a
-                    >
+                    <a href="https://github.com/francisgrain/App-Animal-House" class="btn btn-light mt-auto align-self-start" target="_blank">View Code</a>
                   </div>
                 </div> </div> </div>
           </div>
